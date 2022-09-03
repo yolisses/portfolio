@@ -28,13 +28,16 @@ export function PlantsSection() {
           </h2>
         </a>
       </div>
-      <Smartphone>
-        <iframe
-          src="https://suasplantas.com"
-          title="SuasPlantas.com"
-          className="bg-white h-full w-full"
-        />
-      </Smartphone>
+      <div className="flex flex-row">
+        <div className="flex-1">a</div>
+        <Smartphone>
+          <iframe
+            src="https://suasplantas.com"
+            title="SuasPlantas.com"
+            className="bg-white h-full w-full"
+          />
+        </Smartphone>
+      </div>
     </div>
   );
 }
