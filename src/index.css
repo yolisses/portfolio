@@ -13,3 +13,7 @@
     /* Firefox */
     scrollbar-width: none;
 }
+
+.center {
+    @apply items-center justify-center
+}
