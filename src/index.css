@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Bree+Serif&display=swap');
+
+
 .scrollbar-hide::-webkit-scrollbar {
     /* Chrome, Safari and Opera */
     display: none;
