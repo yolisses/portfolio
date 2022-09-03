@@ -1,0 +1,18 @@
+interface StackIconProps {
+  name:string
+  filename:string
+}
+
+export function StackIcon({ name, filename }:StackIconProps) {
+  return (
+    <figure className="flex flex-col items-center">
+      <img
+        width={64}
+        alt={name}
+        className="rounded-lg"
+        src={`/stack/${filename}.svg`}
+      />
+      <figcaption>{name}</figcaption>
+    </figure>
+  );
+}
