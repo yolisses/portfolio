@@ -4,9 +4,9 @@ import { Smartphone } from './Smartphone';
 
 export function PlantsSection() {
   return (
-    <div className="bg-green-100 p-4">
+    <div className="bg-green-100 p-10">
       <div className="flex flex-row">
-        <div className="flex flex-col flex-1 text-lg gap-4">
+        <div className="flex flex-col flex-1 text-lg gap-8">
           <div className="flex flex-row gap-6 items-center">
             <img
               width={80}
@@ -54,13 +54,20 @@ export function PlantsSection() {
             <StackIcon name="Typescript" filename="typescript" />
           </div>
         </div>
-        <Smartphone>
-          <iframe
-            src="https://suasplantas.com"
-            title="SuasPlantas.com"
-            className="bg-white h-full w-full"
+        <div className="relative z-0">
+          <img
+            src="/plants/plant.webp"
+            alt=""
+            className="absolute bottom-0 -left-32 -z-10"
           />
-        </Smartphone>
+          <Smartphone>
+            <iframe
+              src="https://suasplantas.com"
+              title="SuasPlantas.com"
+              className="bg-white h-full w-full"
+            />
+          </Smartphone>
+        </div>
       </div>
 
     </div>
