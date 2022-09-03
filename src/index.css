@@ -17,3 +17,7 @@
 .center {
     @apply items-center justify-center
 }
+
+h2 {
+    @apply text-3xl
+}
