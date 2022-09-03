@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 52.599998 52.599998"
+   version="1.1"
+   id="svg958"
+   sodipodi:docname="tensorflow.svg"
+   width="52.599998"
+   height="52.599998"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs962" />
+  <sodipodi:namedview
+     id="namedview960"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.8360081"
+     inkscape:cx="50.38104"
+     inkscape:cy="14.161157"
+     inkscape:window-width="1366"
+     inkscape:window-height="731"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg958" />
+  <g
+     id="g1203"
+     transform="translate(2.2999992,-4.8000008)">
+    <g
+       id="g933">
+      <g
+         id="g931">
+        <defs
+           id="defs917">
+          <path
+             id="SVGID_1_"
+             d="M 47.5,17.6 25,4.8 v 52.6 l 9,-5.2 V 37.4 L 40.8,41.3 40.7,31.2 34,27.3 v -5.9 l 13.5,7.9 z" />
+        </defs>
+        <clipPath
+           id="SVGID_2_">
+          <use
+             xlink:href="#SVGID_1_"
+             overflow="visible"
+             id="use919"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+        </clipPath>
+        <g
+           clip-path="url(#SVGID_2_)"
+           id="g929">
+          <linearGradient
+             id="SVGID_3_"
+             gradientUnits="userSpaceOnUse"
+             x1="-1.6"
+             y1="335.04999"
+             x2="53.599998"
+             y2="335.04999"
+             gradientTransform="translate(0,-304)">
+            <stop
+               offset="0"
+               stop-color="#ff6f00"
+               id="stop922" />
+            <stop
+               offset="1"
+               stop-color="#ffa800"
+               id="stop924" />
+          </linearGradient>
+          <path
+             d="M -1.6,4.6 H 53.6 V 57.5 H -1.6 Z"
+             fill="url(#SVGID_3_)"
+             id="path927"
+             style="fill:url(#SVGID_3_)" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g952">
+      <g
+         id="g950">
+        <defs
+           id="defs936">
+          <path
+             id="SVGID_4_"
+             d="M 0.5,17.6 23,4.8 V 57.4 L 14,52.2 V 21.4 L 0.5,29.3 Z" />
+        </defs>
+        <clipPath
+           id="SVGID_5_">
+          <use
+             xlink:href="#SVGID_4_"
+             overflow="visible"
+             id="use938"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+        </clipPath>
+        <g
+           clip-path="url(#SVGID_5_)"
+           id="g948">
+          <linearGradient
+             id="SVGID_6_"
+             gradientUnits="userSpaceOnUse"
+             x1="-1.9"
+             y1="335.04999"
+             x2="53.299999"
+             y2="335.04999"
+             gradientTransform="translate(0,-304)">
+            <stop
+               offset="0"
+               stop-color="#ff6f00"
+               id="stop941" />
+            <stop
+               offset="1"
+               stop-color="#ffa800"
+               id="stop943" />
+          </linearGradient>
+          <path
+             d="M -1.9,4.6 H 53.3 V 57.5 H -1.9 Z"
+             fill="url(#SVGID_6_)"
+             id="path946"
+             style="fill:url(#SVGID_6_)" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
