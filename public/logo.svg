@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="67.73333mm"
+   height="67.73333mm"
+   viewBox="0 0 67.73333 67.73333"
+   version="1.1"
+   id="svg863"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview865"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.74441429"
+     inkscape:cx="24.851753"
+     inkscape:cy="124.93043"
+     inkscape:window-width="1366"
+     inkscape:window-height="731"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs860">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient8175">
+      <stop
+         style="stop-color:#0031bb;stop-opacity:1"
+         offset="0"
+         id="stop8171" />
+      <stop
+         style="stop-color:#ed0d44;stop-opacity:1"
+         offset="1"
+         id="stop8173" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8175"
+       id="linearGradient9833"
+       x1="-269.53616"
+       y1="308.96075"
+       x2="158.43968"
+       y2="-119.01511"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-16.379044,-59.949619)">
+    <rect
+       style="fill:none;fill-opacity:0.396078;stroke-width:0.931525;stroke-miterlimit:3.2"
+       id="rect8201"
+       width="67.73333"
+       height="67.73333"
+       x="16.379044"
+       y="59.949619" />
+    <g
+       id="g22121"
+       transform="matrix(0.99999774,-0.26794859,0.26794859,0.99999774,-25.137827,13.463479)">
+      <path
+         sodipodi:type="star"
+         style="fill:url(#linearGradient9833);fill-opacity:1;stroke:#e11c31;stroke-width:3.42846;stroke-miterlimit:3.2;stroke-opacity:0"
+         id="path9715"
+         inkscape:flatsided="true"
+         sodipodi:sides="6"
+         sodipodi:cx="-55.548237"
+         sodipodi:cy="94.972809"
+         sodipodi:r1="212.00899"
+         sodipodi:r2="183.60516"
+         sodipodi:arg1="1.5707963"
+         sodipodi:arg2="2.0943951"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="M -55.548231,306.9818 -239.1534,200.97731 l -1e-5,-212.00899 183.605167,-106.0045 183.605173,106.00449 0,212.00899 z"
+         transform="matrix(0.15826438,0,0,0.15826438,59.037016,78.785471)" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18.0094px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.450235"
+         x="23.168661"
+         y="98.624786"
+         id="text12317"><tspan
+           sodipodi:role="line"
+           id="tspan12315"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18.0094px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.450235"
+           x="23.168661"
+           y="98.624786">&lt;uli/&gt;</tspan></text>
+    </g>
+  </g>
+</svg>
