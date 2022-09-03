@@ -22,5 +22,6 @@ module.exports = {
     'react/react-in-jsx-scope':'off',
     'import/prefer-default-export':'off',
     'import/no-extraneous-dependencies':'off',
+    '@typescript-eslint/no-unused-vars':'warn',
   },
 };
