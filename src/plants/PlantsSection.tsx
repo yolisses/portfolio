@@ -9,23 +9,30 @@ export function PlantsSection() {
           src="/plants/icon.svg"
           alt="SuasPlantas icon"
         />
-        <h2 className="text-4xl flex flex-row gap-2">
-          <span>
-            Suas
-          </span>
-          <span>
-            Plantas
-          </span>
-          <span>
-            .com
-          </span>
-        </h2>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          className="hover:underline"
+          href="https://suasplantas.com"
+        >
+          <h2 className="text-4xl flex flex-row gap-2">
+            <span>
+              Suas
+            </span>
+            <span>
+              Plantas
+            </span>
+            <span>
+              .com
+            </span>
+          </h2>
+        </a>
       </div>
       <Smartphone>
         <iframe
           src="https://suasplantas.com"
           title="SuasPlantas.com"
-          className="bg-white h-full"
+          className="bg-white h-full w-full"
         />
       </Smartphone>
     </div>
