@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import GitHubCalendar from 'react-github-calendar';
+import { PlantsSection } from '../plants/PlantsSection';
 
 export function HomePage() {
   const [contributions, setContributions] = useState<any>();
@@ -22,6 +23,7 @@ export function HomePage() {
         {contributions as string}
       </section>
       <GitHubCalendar username="yowlisses" />
+      <PlantsSection />
     </div>
   );
 }
