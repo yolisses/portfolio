@@ -19,6 +19,7 @@ module.exports = {
   },
   rules: {
     'import/extensions':'off',
+    'react/button-has-type':'off',
     'react/react-in-jsx-scope':'off',
     'import/prefer-default-export':'off',
     'import/no-extraneous-dependencies':'off',
