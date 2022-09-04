@@ -24,8 +24,14 @@ export function IntroSection() {
           Recruit who goes the extra mile
         </h2>
       </div>
-      <div className="flex flex-row justify-around items-end text-2xl">
-        <div className="p-4">
+      <div className="flex flex-row justify-around items-end">
+        <div className="p-4 flex flex-col gap-1">
+          <a
+            className="hover:underline"
+            href="https://github.com/yowlisses"
+          >
+            yowlisses
+          </a>
           <GitHubCalendar
             username="yowlisses"
             theme={{

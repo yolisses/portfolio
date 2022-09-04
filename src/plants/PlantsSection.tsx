@@ -6,7 +6,7 @@ export function PlantsSection() {
   return (
     <div
       className="bg-green-100 p-10"
-      style={{ fontFamily: 'Ubuntu' }}
+      style={{ fontFamily: "'Ubuntu', sans-serif" }}
     >
       <div className="flex flex-row">
         <div className="flex flex-col flex-1 text-lg gap-8">
