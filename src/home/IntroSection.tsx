@@ -26,12 +26,14 @@ export function IntroSection() {
       </div>
       <div className="flex flex-row justify-around items-end">
         <div className="p-4 flex flex-col gap-1">
-          <a
-            className="hover:underline"
-            href="https://github.com/yowlisses"
-          >
-            yowlisses
-          </a>
+          <div>
+            <a
+              className="hover:underline"
+              href="https://github.com/yowlisses"
+            >
+              yowlisses
+            </a>
+          </div>
           <GitHubCalendar
             username="yowlisses"
             theme={{
