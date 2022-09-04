@@ -1,3 +1,4 @@
+import { MaiSection } from '../mai/MaiSection';
 import { PlantsSection } from '../plants/PlantsSection';
 import { IntroSection } from './IntroSection';
 
@@ -6,6 +7,7 @@ export function HomePage() {
     <div>
       <IntroSection />
       <PlantsSection />
+      <MaiSection />
     </div>
   );
 }

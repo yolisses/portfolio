@@ -4,7 +4,10 @@ import { Smartphone } from './Smartphone';
 
 export function PlantsSection() {
   return (
-    <div className="bg-green-100 p-10">
+    <div
+      className="bg-green-100 p-10"
+      style={{ fontFamily: 'Ubuntu' }}
+    >
       <div className="flex flex-row">
         <div className="flex flex-col flex-1 text-lg gap-8">
           <div className="flex flex-row gap-6 items-center">
@@ -19,7 +22,7 @@ export function PlantsSection() {
               className="hover:underline"
               href="https://suasplantas.com"
             >
-              <h2 className="text-4xl flex flex-row gap-2">
+              <h2 className="text-4xl flex flex-row gap-1">
                 <span>
                   Suas
                 </span>
@@ -35,7 +38,7 @@ export function PlantsSection() {
           <div className="flex flex-col gap-2 max-w-3xl">
             <h3>About</h3>
             <p>
-              SuasPlantas is a Tinder-like app to get plant seeds and seedlings for free. I had this idea by questioning what else the internet can give without costs (beyond software, education, and entertainment) and by observing a common habit of people around me of swapping plants.
+              SuasPlantas is a Tinder-like app to get plant seeds and seedlings for free. I had this idea by questioning what else the internet can give without costs (beyond software, education, and entertainment) and by observing a common habit of people around me of give away plants.
             </p>
             <p>
               It looked like a great idea. I found Facebook groups with dozens of thousands of members to do so. Even without location and map features. The people are constantly asking in the feed who lives next to them in a very inefficient way.
@@ -53,6 +56,7 @@ export function PlantsSection() {
             <StackIcon name="Typescript" filename="typescript" />
             <StackIcon name="PostgreSQL" filename="postgresql" />
             <StackIcon name="Tailwind" filename="tailwind" />
+            <StackIcon name="Socket.IO" filename="socketio" />
           </div>
         </div>
         <div className="relative z-0">
