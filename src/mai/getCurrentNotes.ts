@@ -9,18 +9,18 @@ function isCurrent(note:Note, time:number) {
   return start <= time && time <= end;
 }
 
-export function getCurrentNotes(time:number, guess:number) {
+export function getCurrentNotes(time:number) {
   const maxDuration = 4;
   const notes = instrumentNotes[1];
   const currentNotes = [] as Note[];
 
-  for (let i = guess; notes[i].start <= time; i++) {
+  for (let i = 0; notes[i].start <= time; i++) {
     if (isCurrent(notes[i], time)) {
       currentNotes.push(notes[i]);
     }
   }
 
-  for (let i = guess; i >= 0 && notes[i].start >= time - maxDuration; i--) {
+  for (let i = 0; i >= 0 && notes[i].start >= time - maxDuration; i--) {
     if (isCurrent(notes[i], time)) {
       currentNotes.push(notes[i]);
     }

@@ -20,7 +20,7 @@ export function PianoPicture({ audioRef, playing }:PianoPictureProps) {
 
   function step() {
     const time = audioRef.current!.currentTime;
-    const currentNotes = getCurrentNotes(time, 0);
+    const currentNotes = getCurrentNotes(time);
     setNotes(currentNotes);
     animate(step);
   }
