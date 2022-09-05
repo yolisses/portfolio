@@ -13,6 +13,7 @@ export function MaiExhibition() {
   const [playing, setPlaying] = useState(false);
   const [handling, setHandling] = useState(false);
   const ref = useRef<HTMLAudioElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     const { current } = ref;
@@ -26,24 +27,30 @@ export function MaiExhibition() {
   function handlePause() { setPlaying(false); }
   function handleMouseUp() { setHandling(false); }
   function handleMouseDown() { setHandling(true); }
+  function handlePreloadMetadata(e:Event) {
+    const { duration } = e.currentTarget as HTMLAudioElement;
+    setMaxTime(duration);
+  }
   function handleTimeUpdate(e:Event) {
     const { currentTime } = e.currentTarget as HTMLAudioElement;
     setElapsed(currentTime);
   }
   function handleChange(e:ChangeEvent<HTMLInputElement>) {
     if (ref.current) {
-      ref.current.currentTime = parseFloat(e.target.value);
+      const time = parseFloat(e.target.value);
+      ref.current.currentTime = time;
     }
   }
 
   useEffect(() => {
     if (ref.current) {
-      setMaxTime(ref.current.duration);
       ref.current.addEventListener('timeupdate', handleTimeUpdate);
+      ref.current.addEventListener('loadedmetadata', handlePreloadMetadata);
     }
     return () => {
       if (ref.current) {
         ref.current.removeEventListener('timeupdate', handleTimeUpdate);
+        ref.current.removeEventListener('loadedmetadata', handlePreloadMetadata);
       }
     };
   }, [ref]);
@@ -65,6 +72,7 @@ export function MaiExhibition() {
           <input
             type="range"
             max={maxTime}
+            ref={inputRef}
             value={elapsed}
             className="w-full"
             onChange={handleChange}
@@ -82,6 +90,7 @@ export function MaiExhibition() {
       <audio
         // controls
         ref={ref}
+        preload="metadata"
         className="w-full"
         onPlay={handlePlay}
         onPause={handlePause}

@@ -10,17 +10,12 @@ function isCurrent(note:Note, time:number) {
 }
 
 export function getCurrentNotes(time:number) {
-  const maxDuration = 4;
   const notes = instrumentNotes[1];
   const currentNotes = [] as Note[];
 
-  for (let i = 0; notes[i].start <= time; i++) {
-    if (isCurrent(notes[i], time)) {
-      currentNotes.push(notes[i]);
-    }
-  }
-
-  for (let i = 0; i >= 0 && notes[i].start >= time - maxDuration; i--) {
+  for (let i = 0; i < notes.length; i++) {
+    if (notes[i] === undefined) console.log(i);
+    if (notes[i].start > time) break;
     if (isCurrent(notes[i], time)) {
       currentNotes.push(notes[i]);
     }

@@ -53,7 +53,7 @@ export function PianoPicture({ audioRef, playing }:PianoPictureProps) {
           preserveAspectRatio="none"
         />
         {notes.map((value) => (
-          <>
+          <Fragment key={value.id}>
             <path
               fill="#32d56e"
               className="scale-105 -translate-x-1 -translate-y-2 blur-sm bg-blend-color-burn"
@@ -63,7 +63,7 @@ export function PianoPicture({ audioRef, playing }:PianoPictureProps) {
               fill="#22c55e"
               d={pianoKeyPaths[value.pitch - pitchOffset]}
             />
-          </>
+          </Fragment>
         ))}
       </g>
     </svg>
