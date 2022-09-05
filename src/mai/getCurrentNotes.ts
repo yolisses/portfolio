@@ -1,13 +1,30 @@
+/* eslint-disable no-plusplus */
 /* eslint-disable no-restricted-syntax */
 import { Note } from './Note';
+import { notes as instrumentNotes } from './notes';
 
-export function getCurrentNotes(notes:Note[], start:number, duration:number, guess:number) {
-  let i = guess;
-  while (true) {
-    if (notes[i].start > start) {
-      break;
+function isCurrent(note:Note, time:number) {
+  const { start, duration } = note;
+  const end = start + duration;
+  return start <= time && time <= end;
+}
+
+export function getCurrentNotes(time:number, guess:number) {
+  const maxDuration = 4;
+  const notes = instrumentNotes[1];
+  const currentNotes = [] as Note[];
+
+  for (let i = guess; notes[i].start <= time; i++) {
+    if (isCurrent(notes[i], time)) {
+      currentNotes.push(notes[i]);
     }
-    console.log(i, notes[i]);
-    i += 1;
   }
+
+  for (let i = guess; i >= 0 && notes[i].start >= time - maxDuration; i--) {
+    if (isCurrent(notes[i], time)) {
+      currentNotes.push(notes[i]);
+    }
+  }
+
+  return currentNotes;
 }

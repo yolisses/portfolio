@@ -4,7 +4,6 @@ import { MutableRefObject, useEffect, useRef } from 'react';
 import { notes } from './notes';
 import { NoteItem } from './NoteItem';
 import { useAnimation } from './useAnimation';
-import { displayTimestep } from './displayTimestep';
 
 interface PianoRollProps {
   audioRef: MutableRefObject<any>
@@ -20,12 +19,10 @@ export function PianoRoll({ audioRef, playing }:PianoRollProps) {
   const displayRef = useRef<any>();
   const { animate, cancelAnimation } = useAnimation();
 
-  function step(timestep:number) {
-    displayTimestep(timestep);
+  function step() {
     const time = audioRef.current.currentTime;
     const viewBox = `0 ${time * scaleY} ${maxPitch} ${height}`;
     displayRef.current.setAttribute('viewBox', viewBox);
-
     animate(step);
   }
 

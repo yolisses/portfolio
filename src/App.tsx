@@ -1,5 +1,5 @@
-import { HomePage } from './home/HomePage';
+import { DevPage } from './dev/DevPage';
 
 export function App() {
-  return <HomePage />
+  return <DevPage />;
 }

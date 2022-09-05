@@ -7,7 +7,6 @@ import { PianoPicture } from './PianoPicture';
 
 export function MaiExhibition() {
   const audioRef = useRef<any>();
-
   const [playing, setPlaying] = useState(false);
 
   useEffect(() => {
@@ -18,13 +17,8 @@ export function MaiExhibition() {
     }
   }, [playing, audioRef]);
 
-  function handlePlay() {
-    setPlaying(true);
-  }
-
-  function handlePause() {
-    setPlaying(false);
-  }
+  function handlePlay() { setPlaying(true); }
+  function handlePause() { setPlaying(false); }
 
   return (
     <div className="flex-1">
@@ -41,7 +35,10 @@ export function MaiExhibition() {
         </div>
       </div>
       <div className="scale-[120%]">
-        <PianoPicture notes={[1, 4, 5]} />
+        <PianoPicture
+          playing={playing}
+          audioRef={audioRef}
+        />
       </div>
       <audio
         controls

@@ -1,11 +1,38 @@
+import {
+  Fragment, MutableRefObject, useEffect, useState,
+} from 'react';
+import { displayTimestep } from './displayTimestep';
+import { getCurrentNotes } from './getCurrentNotes';
+import { Note } from './Note';
 import { pianoKeyPaths } from './pianoKeyPaths';
+import { useAnimation } from './useAnimation';
 
 /* eslint-disable react/no-unknown-property */
 interface PianoPictureProps {
-  notes:number[]
+  playing:boolean
+  audioRef: MutableRefObject<any>
 }
 
-export function PianoPicture({ notes }:PianoPictureProps) {
+export function PianoPicture({ audioRef, playing }:PianoPictureProps) {
+  const { animate, cancelAnimation } = useAnimation();
+  const [notes, setNotes] = useState([] as Note[]);
+  const pitchOffset = 41;
+
+  function step(timestep:number) {
+    const time = audioRef.current.currentTime;
+    const currentNotes = getCurrentNotes(time, 1);
+    setNotes(currentNotes);
+    animate(step);
+  }
+
+  useEffect(() => {
+    if (playing) {
+      animate(step);
+    }
+
+    return cancelAnimation;
+  }, [audioRef, playing]);
+
   return (
     <svg
       id="svg5"
@@ -26,12 +53,17 @@ export function PianoPicture({ notes }:PianoPictureProps) {
           preserveAspectRatio="none"
         />
         {notes.map((value) => (
-          <path
-            fill="#22c55e"
-            key={value}
-            opacity={0.7}
-            d={pianoKeyPaths[value]}
-          />
+          <>
+            <path
+              fill="#32d56e"
+              className="scale-105 -translate-x-1 -translate-y-2 blur-sm bg-blend-color-burn"
+              d={pianoKeyPaths[value.pitch - pitchOffset]}
+            />
+            <path
+              fill="#22c55e"
+              d={pianoKeyPaths[value.pitch - pitchOffset]}
+            />
+          </>
         ))}
       </g>
     </svg>

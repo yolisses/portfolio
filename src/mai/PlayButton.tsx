@@ -16,7 +16,7 @@ export function PlayButton({ playing, setPlaying }:PlayButtonProps) {
   return (
     <button
       onClick={handleClick}
-      className="rounded p-2"
+      className="rounded p-2 text-white"
     >
       <Icon size={24} />
     </button>
