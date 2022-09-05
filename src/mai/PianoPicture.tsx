@@ -1,5 +1,5 @@
 import {
-  Fragment, MutableRefObject, useEffect, useState,
+  Fragment, MutableRefObject, RefObject, useEffect, useState,
 } from 'react';
 import { displayTimestep } from './displayTimestep';
 import { getCurrentNotes } from './getCurrentNotes';
@@ -10,7 +10,7 @@ import { useAnimation } from './useAnimation';
 /* eslint-disable react/no-unknown-property */
 interface PianoPictureProps {
   playing:boolean
-  audioRef: MutableRefObject<any>
+  audioRef: RefObject<HTMLAudioElement>
 }
 
 export function PianoPicture({ audioRef, playing }:PianoPictureProps) {
@@ -18,15 +18,15 @@ export function PianoPicture({ audioRef, playing }:PianoPictureProps) {
   const [notes, setNotes] = useState([] as Note[]);
   const pitchOffset = 41;
 
-  function step(timestep:number) {
-    const time = audioRef.current.currentTime;
-    const currentNotes = getCurrentNotes(time, 1);
+  function step() {
+    const time = audioRef.current!.currentTime;
+    const currentNotes = getCurrentNotes(time, 0);
     setNotes(currentNotes);
     animate(step);
   }
 
   useEffect(() => {
-    if (playing) {
+    if (audioRef.current && playing) {
       animate(step);
     }
 

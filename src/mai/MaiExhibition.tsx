@@ -1,31 +1,59 @@
 /* eslint-disable jsx-a11y/media-has-caption */
 /* eslint-disable react/no-unknown-property */
-import { useEffect, useRef, useState } from 'react';
+import {
+  ChangeEvent, useEffect, useRef, useState,
+} from 'react';
 import { PianoRoll } from './PianoRoll';
 import { PlayButton } from './PlayButton';
 import { PianoPicture } from './PianoPicture';
 
 export function MaiExhibition() {
-  const audioRef = useRef<any>();
+  const [elapsed, setElapsed] = useState(0);
+  const [maxTime, setMaxTime] = useState(0);
   const [playing, setPlaying] = useState(false);
+  const [handling, setHandling] = useState(false);
+  const ref = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
-    const { current } = audioRef;
+    const { current } = ref;
     if (current) {
       if (playing) current.play();
       else current.pause();
     }
-  }, [playing, audioRef]);
+  }, [playing, ref]);
 
   function handlePlay() { setPlaying(true); }
   function handlePause() { setPlaying(false); }
+  function handleMouseUp() { setHandling(false); }
+  function handleMouseDown() { setHandling(true); }
+  function handleTimeUpdate(e:Event) {
+    const { currentTime } = e.currentTarget as HTMLAudioElement;
+    setElapsed(currentTime);
+  }
+  function handleChange(e:ChangeEvent<HTMLInputElement>) {
+    if (ref.current) {
+      ref.current.currentTime = parseFloat(e.target.value);
+    }
+  }
+
+  useEffect(() => {
+    if (ref.current) {
+      setMaxTime(ref.current.duration);
+      ref.current.addEventListener('timeupdate', handleTimeUpdate);
+    }
+    return () => {
+      if (ref.current) {
+        ref.current.removeEventListener('timeupdate', handleTimeUpdate);
+      }
+    };
+  }, [ref]);
 
   return (
-    <div className="flex-1">
+    <div className="flex-1 relative">
       <div className="relative z-10">
         <PianoRoll
-          playing={playing}
-          audioRef={audioRef}
+          playing={playing || handling}
+          audioRef={ref}
         />
         <div className="absolute bottom-0 left-0">
           <PlayButton
@@ -33,16 +61,27 @@ export function MaiExhibition() {
             setPlaying={setPlaying}
           />
         </div>
+        <div className="absolute w-full z-20 flex center h-2">
+          <input
+            type="range"
+            max={maxTime}
+            value={elapsed}
+            className="w-full"
+            onChange={handleChange}
+            onMouseUp={handleMouseUp}
+            onMouseDown={handleMouseDown}
+          />
+        </div>
       </div>
-      <div className="scale-[120%]">
+      <div className="scale-[120%] translate-y-1">
         <PianoPicture
-          playing={playing}
-          audioRef={audioRef}
+          playing={playing || handling}
+          audioRef={ref}
         />
       </div>
       <audio
-        controls
-        ref={audioRef}
+        // controls
+        ref={ref}
         className="w-full"
         onPlay={handlePlay}
         onPause={handlePause}

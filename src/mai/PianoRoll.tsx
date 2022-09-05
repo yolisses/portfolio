@@ -1,13 +1,13 @@
 /* eslint-disable jsx-a11y/media-has-caption */
 /* eslint-disable react/no-unknown-property */
-import { MutableRefObject, useEffect, useRef } from 'react';
+import { RefObject, useEffect, useRef } from 'react';
 import { notes } from './notes';
 import { NoteItem } from './NoteItem';
 import { useAnimation } from './useAnimation';
 
 interface PianoRollProps {
-  audioRef: MutableRefObject<any>
   playing: boolean
+  audioRef: RefObject<HTMLAudioElement>
 }
 
 export function PianoRoll({ audioRef, playing }:PianoRollProps) {
@@ -20,14 +20,14 @@ export function PianoRoll({ audioRef, playing }:PianoRollProps) {
   const { animate, cancelAnimation } = useAnimation();
 
   function step() {
-    const time = audioRef.current.currentTime;
+    const time = audioRef.current!.currentTime;
     const viewBox = `0 ${time * scaleY} ${maxPitch} ${height}`;
     displayRef.current.setAttribute('viewBox', viewBox);
     animate(step);
   }
 
   useEffect(() => {
-    if (playing) {
+    if (audioRef.current && playing) {
       animate(step);
     }
     return cancelAnimation;
