@@ -22,8 +22,8 @@ export function PianoRoll({ audioRef, playing }:PianoRollProps) {
 
   function step(timestep:number) {
     displayTimestep(timestep);
-    const count = audioRef.current.currentTime;
-    const viewBox = `0 ${count * scaleY} ${maxPitch} ${height}`;
+    const time = audioRef.current.currentTime;
+    const viewBox = `0 ${time * scaleY} ${maxPitch} ${height}`;
     displayRef.current.setAttribute('viewBox', viewBox);
 
     animate(step);
