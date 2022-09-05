@@ -1,12 +1,10 @@
-/* eslint-disable @typescript-eslint/no-use-before-define */
-/* eslint-disable max-len */
 /* eslint-disable jsx-a11y/media-has-caption */
 /* eslint-disable react/no-unknown-property */
-import {
-  MutableRefObject, useEffect, useRef, useState,
-} from 'react';
-import { NoteItem } from './NoteItem';
+import { MutableRefObject, useEffect, useRef } from 'react';
 import { notes } from './notes';
+import { NoteItem } from './NoteItem';
+import { useAnimation } from './useAnimation';
+import { displayTimestep } from './displayTimestep';
 
 interface PianoRollProps {
   audioRef: MutableRefObject<any>
@@ -19,24 +17,8 @@ export function PianoRoll({ audioRef, playing }:PianoRollProps) {
   const height = 120;
   const maxPitch = 89;
   const pitchOffset = 26;
-  const [holder] = useState({ requestId: 0 });
-
   const displayRef = useRef<any>();
-
-  function displayTimestep(timestep:number) {
-    if (Math.floor(timestep / 100) % 10 === 0) {
-      console.log(timestep);
-    }
-  }
-
-  function animate() {
-    const requestId = requestAnimationFrame(step);
-    holder.requestId = requestId;
-  }
-
-  function cancelAnimation() {
-    cancelAnimationFrame(holder.requestId);
-  }
+  const { animate, cancelAnimation } = useAnimation();
 
   function step(timestep:number) {
     displayTimestep(timestep);
@@ -44,12 +26,12 @@ export function PianoRoll({ audioRef, playing }:PianoRollProps) {
     const viewBox = `0 ${count * scaleY} ${maxPitch} ${height}`;
     displayRef.current.setAttribute('viewBox', viewBox);
 
-    animate();
+    animate(step);
   }
 
   useEffect(() => {
     if (playing) {
-      animate();
+      animate(step);
     }
     return cancelAnimation;
   }, [audioRef, playing]);

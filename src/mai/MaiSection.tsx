@@ -21,7 +21,7 @@ export function MaiSection() {
           Pre Release
         </div>
       </div>
-      <div className="flex flex-row gap-8">
+      <div className="flex flex-row gap-16">
         <MaiExhibition />
         <div className="flex flex-col gap-8">
           <h3>About</h3>
