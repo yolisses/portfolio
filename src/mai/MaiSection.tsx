@@ -1,8 +1,6 @@
 /* eslint-disable max-len */
 import { StackIcon } from '../common/StackIcon';
-import { PianoRoll } from './PianoRoll';
-import { PianoPicture } from './PianoPicture';
-import { PlayButton } from './PlayButton';
+import { MaiExhibition } from './MaiExhibition';
 
 export function MaiSection() {
   return (
@@ -24,17 +22,7 @@ export function MaiSection() {
         </div>
       </div>
       <div className="flex flex-row gap-8">
-        <div className="flex-1">
-          <div className="relative z-10">
-            <PianoRoll />
-            <div className="absolute bottom-0 left-0">
-              <PlayButton />
-            </div>
-          </div>
-          <div className="scale-[120%]">
-            <PianoPicture notes={[1, 4, 5]} />
-          </div>
-        </div>
+        <MaiExhibition />
         <div className="flex flex-col gap-8">
           <h3>About</h3>
           <p>
