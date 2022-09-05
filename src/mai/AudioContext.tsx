@@ -39,7 +39,7 @@ export function AudioContextProvider({ children }:ChildrenProps) {
     >
       {children}
       <audio
-        controls
+        // controls
         ref={ref}
         onPlay={handlePlay}
         onPause={handlePause}

@@ -32,7 +32,7 @@ export function MaiSection() {
             </div>
           </div>
           <div className="scale-[120%]">
-            <PianoPicture />
+            <PianoPicture notes={[1, 4, 5]} />
           </div>
         </div>
         <div className="flex flex-col gap-8">

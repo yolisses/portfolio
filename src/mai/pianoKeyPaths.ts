@@ -1,4 +1,4 @@
-export const pianoKeyPaths = {
+export const pianoKeyPaths:{ [key:number]:string } = {
 
   0: 'm 50.126168,104.30035 h -3.463692 l -9.155544,36.97232 8.50509,0 2.801444,-14.44755 -3.31646,3.1e-4 0.324228,-1.77541 0.13264,-1.48849 z',
 

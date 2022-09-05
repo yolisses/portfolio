@@ -1,7 +1,11 @@
 import { pianoKeyPaths } from './pianoKeyPaths';
 
 /* eslint-disable react/no-unknown-property */
-export function PianoPicture() {
+interface PianoPictureProps {
+  notes:number[]
+}
+
+export function PianoPicture({ notes }:PianoPictureProps) {
   return (
     <svg
       id="svg5"
@@ -21,16 +25,14 @@ export function PianoPicture() {
           href="/mai/piano.png"
           preserveAspectRatio="none"
         />
-        {Object
-          .entries(pianoKeyPaths)
-          .map(([key, d]) => (
-            <path
-              d={d}
-              fill="red"
-              opacity={0.5}
-              key={key}
-            />
-          ))}
+        {notes.map((value) => (
+          <path
+            fill="#22c55e"
+            key={value}
+            opacity={0.7}
+            d={pianoKeyPaths[value]}
+          />
+        ))}
       </g>
     </svg>
   );

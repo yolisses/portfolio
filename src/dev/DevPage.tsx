@@ -1,33 +1,18 @@
-/* eslint-disable react/no-unknown-property */
-/* eslint-disable jsx-a11y/media-has-caption */
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
+import { getCurrentNotes } from '../mai/getCurrentNotes';
+import { notes } from '../mai/notes';
 
 export function DevPage() {
-  const displayRef = useRef<any>();
-  const audioRef = useRef<any>();
-
-  function animate() {
-    function step() {
-      const count = audioRef.current.currentTime;
-      displayRef.current.style.transform = `rotate(${count}turn)`;
-      window.requestAnimationFrame(step);
-    }
-
-    window.requestAnimationFrame(step);
+  function doThings() {
+    console.log('restart');
+    getCurrentNotes(notes[2], 0, 10, 0);
   }
 
-  useEffect(animate, []);
+  useEffect(doThings, []);
 
   return (
     <div>
-      <div ref={displayRef} className="bg-red-500 w-10">a</div>
-      <audio
-        controls
-        ref={audioRef}
-        className="w-full"
-      >
-        <source src="/mai/mai.mp3" type="audio/mpeg" />
-      </audio>
+      oi
     </div>
   );
 }
