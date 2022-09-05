@@ -1,9 +1,12 @@
+import { Dispatch, SetStateAction } from 'react';
 import { FaPause, FaPlay } from 'react-icons/fa';
-import { useAudio } from './AudioContext';
 
-export function PlayButton() {
-  const { playing, setPlaying } = useAudio();
+interface PlayButtonProps {
+  playing:boolean
+  setPlaying:Dispatch<SetStateAction<boolean>>
+}
 
+export function PlayButton({ playing, setPlaying }:PlayButtonProps) {
   const Icon = playing ? FaPause : FaPlay;
 
   function handleClick() {

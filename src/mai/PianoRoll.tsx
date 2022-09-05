@@ -1,43 +1,61 @@
+/* eslint-disable @typescript-eslint/no-use-before-define */
 /* eslint-disable max-len */
 /* eslint-disable jsx-a11y/media-has-caption */
 /* eslint-disable react/no-unknown-property */
-import { useEffect, useRef } from 'react';
+import {
+  MutableRefObject, useEffect, useRef, useState,
+} from 'react';
 import { NoteItem } from './NoteItem';
 import { notes } from './notes';
 
-export function PianoRoll() {
-  const scaleX = 1.3;
+interface PianoRollProps {
+  audioRef: MutableRefObject<any>
+  playing: boolean
+}
+
+export function PianoRoll({ audioRef, playing }:PianoRollProps) {
   const scaleY = 7;
-  const maxPitch = 89;
+  const scaleX = 1.3;
   const height = 120;
+  const maxPitch = 89;
   const pitchOffset = 26;
+  const [holder] = useState({ requestId: 0 });
 
   const displayRef = useRef<any>();
-  const audioRef = useRef<any>();
 
-  function step() {
+  function displayTimestep(timestep:number) {
+    if (Math.floor(timestep / 100) % 10 === 0) {
+      console.log(timestep);
+    }
+  }
+
+  function animate() {
+    const requestId = requestAnimationFrame(step);
+    holder.requestId = requestId;
+  }
+
+  function cancelAnimation() {
+    cancelAnimationFrame(holder.requestId);
+  }
+
+  function step(timestep:number) {
+    displayTimestep(timestep);
     const count = audioRef.current.currentTime;
     const viewBox = `0 ${count * scaleY} ${maxPitch} ${height}`;
     displayRef.current.setAttribute('viewBox', viewBox);
 
-    window.requestAnimationFrame(step);
+    animate();
   }
 
-  function animate() {
-    window.requestAnimationFrame(step);
-  }
-
-  useEffect(animate, []);
+  useEffect(() => {
+    if (playing) {
+      animate();
+    }
+    return cancelAnimation;
+  }, [audioRef, playing]);
 
   return (
     <div>
-      <audio
-        controls
-        ref={audioRef}
-        className="w-full"
-      >
-        <source src="/mai/mai.mp3" type="audio/mpeg" />
-      </audio>
       <svg
         direction="rtl"
         ref={displayRef}
