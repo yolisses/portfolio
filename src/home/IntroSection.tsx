@@ -29,13 +29,13 @@ export function IntroSection() {
           <div>
             <a
               className="hover:underline"
-              href="https://github.com/yowlisses"
+              href="https://github.com/yolisses"
             >
-              yowlisses
+              yolisses
             </a>
           </div>
           <GitHubCalendar
-            username="yowlisses"
+            username="yolisses"
             theme={{
               level0: '#161b2288',
               level1: '#0e4429',
