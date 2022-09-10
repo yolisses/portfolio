@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import { StackIcon } from '../common/StackIcon';
-import { Smartphone } from './Smartphone';
+import { PlantsExtra } from './PlantsExtra';
 
 export function PlantsSection() {
   return (
@@ -59,20 +59,7 @@ export function PlantsSection() {
             <StackIcon name="socketio" />
           </div>
         </div>
-        <div className="relative z-0">
-          <img
-            src="/plants/plant.webp"
-            alt=""
-            className="absolute bottom-0 -left-32 -z-10"
-          />
-          <Smartphone>
-            <iframe
-              src="https://suasplantas.com"
-              title="SuasPlantas.com"
-              className="bg-white h-full w-full rounded-2xl"
-            />
-          </Smartphone>
-        </div>
+        <PlantsExtra />
       </div>
 
     </div>

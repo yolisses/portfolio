@@ -1,13 +1,12 @@
 /* eslint-disable max-len */
+import { SonhinExtra } from './SonhinExtra';
 import { StackIcon } from '../common/StackIcon';
-import { MaiExhibition } from '../mai/MaiExhibition';
-import { SonhinExhibition } from './SonhinExhibition';
 
 export function SonhinSection() {
   return (
     <div
       style={{ fontFamily: "'Source Sans Pro'", fontSize: '1.25em' }}
-      className="bg-zinc-900 text-white p-10 flex flex-col gap-8"
+      className="bg-zinc-800 text-white p-10 flex flex-col gap-8"
     >
       <div className="flex flex-row items-center gap-6">
         <img
@@ -19,8 +18,7 @@ export function SonhinSection() {
           Sonhin
         </h2>
       </div>
-      <div className="flex flex-row gap-16">
-        <SonhinExhibition />
+      <div className="flex flex-row">
         <div className="flex flex-col gap-8">
           <h3>About</h3>
           <p>
@@ -57,6 +55,7 @@ export function SonhinSection() {
             <StackIcon name="tailwind" />
           </div>
         </div>
+        <SonhinExtra />
       </div>
     </div>
   );
