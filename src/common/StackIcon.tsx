@@ -12,6 +12,9 @@ const icons = {
   typescript: 'Typescript',
   postgresql: 'PostgreSQL',
   tensorflow: 'Tensorflow',
+  neo4j: 'Neo4j',
+  spring: 'Spring',
+  docker: 'Docker',
 };
 
 interface StackIconProps {

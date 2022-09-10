@@ -47,11 +47,9 @@ export function SonhinSection() {
             className="grid grid-flow-col grid-rows-1 w-fit text-sm gap-2"
             style={{ gridAutoColumns: '1fr' }}
           >
-            <StackIcon name="tensorflow" />
-            <StackIcon name="django" />
-            <StackIcon name="python" />
-            <StackIcon name="jupyter" />
-            <StackIcon name="websocket" />
+            <StackIcon name="spring" />
+            <StackIcon name="neo4j" />
+            <StackIcon name="docker" />
             <StackIcon name="react" />
             <StackIcon name="typescript" />
             <StackIcon name="tailwind" />

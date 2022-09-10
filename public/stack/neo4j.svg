@@ -2,11 +2,11 @@
 <svg
    id="Layer_1"
    data-name="Layer 1"
-   viewBox="0 0 30.089999 30.090001"
+   viewBox="0 0 35.17615 35.176152"
    version="1.1"
    sodipodi:docname="neo4j.svg"
-   width="30.09"
-   height="30.09"
+   width="35.176151"
+   height="35.176151"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -25,15 +25,15 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="4.147802"
-     inkscape:cx="3.736919"
-     inkscape:cy="-11.090211"
+     inkscape:zoom="5.1036588"
+     inkscape:cx="3.4289126"
+     inkscape:cy="2.939068"
      inkscape:window-width="1366"
      inkscape:window-height="731"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="Layer_1" />
+     inkscape:current-layer="g1000" />
   <defs
      id="defs4">
     <style
@@ -41,15 +41,29 @@
   </defs>
   <g
      id="g1000"
-     transform="translate(0,-6.6799999)">
-    <path
-       d="m 20.44,7.54 c -5.92,0 -9.9,3.41 -9.9,10.12 v 4.09 a 5.51,5.51 0 0 1 1.93,-0.45 3.76,3.76 0 0 1 1.94,0.45 v -4.09 c 0,-4.32 2.39,-6.6 6,-6.6 3.61,0 6,2.28 6,6.6 v 10.46 h 3.87 V 17.66 c 0,-6.71 -4,-10.12 -9.89,-10.12"
-       transform="translate(-0.19,-0.03)"
-       id="path6" />
-    <path
-       class="cls-1"
-       d="m 12.25,23.23 a 2.71,2.71 0 0 0 -1.94,0.68 L 6.67,21.53 a 2.41,2.41 0 0 0 0.12,-0.91 3.3,3.3 0 1 0 -3.3,3.29 2.65,2.65 0 0 0 1.93,-0.68 l 3.64,2.5 a 2.61,2.61 0 0 0 -0.11,0.91 2.56,2.56 0 0 0 0.11,0.91 l -3.64,2.51 a 3.07,3.07 0 0 0 -1.93,-0.69 3.3,3.3 0 1 0 3.3,3.3 2.38,2.38 0 0 0 -0.12,-0.91 l 3.64,-2.5 a 3.06,3.06 0 0 0 1.94,0.68 3.29,3.29 0 0 0 3.29,-3.3 3.39,3.39 0 0 0 -3.29,-3.41"
-       transform="translate(-0.19,-0.03)"
-       id="path18" />
+     transform="translate(2.5430756,-4.1369243)">
+    <rect
+       style="fill:#ffffff;stroke:none;stroke-width:2.75679;stroke-linejoin:round;stroke-opacity:0.9883"
+       id="rect1198"
+       width="35.176151"
+       height="35.176151"
+       x="-2.5430756"
+       y="4.1369243" />
+    <g
+       id="g1282"
+       transform="matrix(0.86726673,0,0,0.86726673,1.9969721,2.8836303)"
+       style="stroke-width:1.15305">
+      <path
+         d="m 20.44,7.54 c -5.92,0 -9.9,3.41 -9.9,10.12 v 4.09 a 5.51,5.51 0 0 1 1.93,-0.45 3.76,3.76 0 0 1 1.94,0.45 v -4.09 c 0,-4.32 2.39,-6.6 6,-6.6 3.61,0 6,2.28 6,6.6 v 10.46 h 3.87 V 17.66 c 0,-6.71 -4,-10.12 -9.89,-10.12"
+         transform="translate(-0.19,-0.03)"
+         id="path6"
+         style="fill:#000000;stroke-width:1.15305" />
+      <path
+         class="cls-1"
+         d="m 12.25,23.23 a 2.71,2.71 0 0 0 -1.94,0.68 L 6.67,21.53 a 2.41,2.41 0 0 0 0.12,-0.91 3.3,3.3 0 1 0 -3.3,3.29 2.65,2.65 0 0 0 1.93,-0.68 l 3.64,2.5 a 2.61,2.61 0 0 0 -0.11,0.91 2.56,2.56 0 0 0 0.11,0.91 l -3.64,2.51 a 3.07,3.07 0 0 0 -1.93,-0.69 3.3,3.3 0 1 0 3.3,3.3 2.38,2.38 0 0 0 -0.12,-0.91 l 3.64,-2.5 a 3.06,3.06 0 0 0 1.94,0.68 3.29,3.29 0 0 0 3.29,-3.3 3.39,3.39 0 0 0 -3.29,-3.41"
+         transform="translate(-0.19,-0.03)"
+         id="path18"
+         style="stroke-width:1.15305" />
+    </g>
   </g>
 </svg>

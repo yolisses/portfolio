@@ -9,7 +9,7 @@ export function HomePage() {
       <IntroSection />
       <PlantsSection />
       <MaiSection />
-      {/* <SonhinSection /> */}
+      <SonhinSection />
     </div>
   );
 }
