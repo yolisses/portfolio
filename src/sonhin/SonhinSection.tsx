@@ -48,6 +48,7 @@ export function SonhinSection() {
             style={{ gridAutoColumns: '1fr' }}
           >
             <StackIcon name="spring" />
+            <StackIcon name="java" />
             <StackIcon name="neo4j" />
             <StackIcon name="docker" />
             <StackIcon name="react" />

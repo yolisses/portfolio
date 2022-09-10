@@ -16,6 +16,7 @@ const icons = {
   spring: 'Spring',
   docker: 'Docker',
   s3: 'S3',
+  java: 'Java',
 };
 
 interface StackIconProps {
