@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 import { StackIcon } from '../common/StackIcon';
 import { MaiExhibition } from '../mai/MaiExhibition';
+import { SonhinExhibition } from './SonhinExhibition';
 
 export function SonhinSection() {
   return (
@@ -19,7 +20,7 @@ export function SonhinSection() {
         </h2>
       </div>
       <div className="flex flex-row gap-16">
-        <MaiExhibition />
+        <SonhinExhibition />
         <div className="flex flex-col gap-8">
           <h3>About</h3>
           <p>

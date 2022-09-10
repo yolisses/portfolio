@@ -69,7 +69,7 @@ export function PlantsSection() {
             <iframe
               src="https://suasplantas.com"
               title="SuasPlantas.com"
-              className="bg-white h-full w-full"
+              className="bg-white h-full w-full rounded-2xl"
             />
           </Smartphone>
         </div>
