@@ -45,7 +45,7 @@ export function MaiSection() {
               And this is my attempt to embrace this change.
             </li>
           </ul>
-          <h3>Stack</h3>
+          <h3>Tools</h3>
           <div
             className="grid grid-flow-col grid-rows-1 w-fit text-sm gap-2"
             style={{ gridAutoColumns: '1fr' }}

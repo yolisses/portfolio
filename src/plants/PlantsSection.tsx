@@ -44,7 +44,7 @@ export function PlantsSection() {
               It looked like a great idea. I found Facebook groups with dozens of thousands of members to do so. Even without location and map features. The people are constantly asking in the feed who lives next to them in a very inefficient way.
             </p>
           </div>
-          <h3>Stack</h3>
+          <h3>Tools</h3>
           <div
             className="grid grid-flow-col grid-rows-1 w-fit text-sm gap-2"
             style={{ gridAutoColumns: '1fr' }}

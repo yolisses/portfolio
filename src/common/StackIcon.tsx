@@ -29,7 +29,7 @@ export function StackIcon({ name }:StackIconProps) {
         width={56}
         alt="icon"
         className="rounded-lg"
-        src={`/stack/${name}.svg`}
+        src={`/tools/${name}.svg`}
       />
       <figcaption>{icons[name]}</figcaption>
     </figure>
