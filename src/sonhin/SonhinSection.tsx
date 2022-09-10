@@ -1,25 +1,22 @@
 /* eslint-disable max-len */
 import { StackIcon } from '../common/StackIcon';
-import { MaiExhibition } from './MaiExhibition';
+import { MaiExhibition } from '../mai/MaiExhibition';
 
-export function MaiSection() {
+export function SonhinSection() {
   return (
     <div
       style={{ fontFamily: "'Source Sans Pro'", fontSize: '1.25em' }}
-      className="bg-slate-900 text-white p-10 flex flex-col gap-8"
+      className="bg-zinc-900 text-white p-10 flex flex-col gap-8"
     >
       <div className="flex flex-row items-center gap-6">
         <img
           width={80}
-          alt="MAI icon"
-          src="/mai/logo.svg"
+          alt="Sonhin icon"
+          src="/sonhin/logo.svg"
         />
         <h2 className="text-4xl">
-          Mai (Musical AI)
+          Sonhin
         </h2>
-        <div className="bg-purple-900 w-fit px-1 rounded-full text-base">
-          Pre Release
-        </div>
       </div>
       <div className="flex flex-row gap-16">
         <MaiExhibition />
