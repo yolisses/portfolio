@@ -55,7 +55,7 @@ export function PlantsSection() {
             <StackIcon name="nodejs" />
             <StackIcon name="typescript" />
             <StackIcon name="postgresql" />
-            <StackIcon name="tailwind" />
+            <StackIcon name="s3" />
             <StackIcon name="socketio" />
           </div>
         </div>

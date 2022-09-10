@@ -15,6 +15,7 @@ const icons = {
   neo4j: 'Neo4j',
   spring: 'Spring',
   docker: 'Docker',
+  s3: 'S3',
 };
 
 interface StackIconProps {
