@@ -13,7 +13,7 @@ export function SonhinExtra() {
         <iframe
           src="https://sonhin.com"
           title="SuasPlantas.com"
-          className="bg-white h-full w-full rounded-2xl"
+          className="bg-zinc-900 h-full w-full rounded-2xl"
         />
       </Smartphone>
     </div>
