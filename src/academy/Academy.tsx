@@ -5,6 +5,7 @@ export function Academy() {
         <img
           src="/academy/medals.webp"
           alt="medals"
+          width={250}
         />
       </div>
       <div className="p-8">
