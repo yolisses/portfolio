@@ -17,7 +17,7 @@ export function ProjectSection({
 }:ProjectSectionProps) {
   return (
     <section
-      className={`p-8 flex gap-8 flex-row ${className}`}
+      className={`p-4 md:p-8 flex gap-8 flex-col md:flex-row ${className}`}
       style={style}
     >
       <div>
@@ -50,7 +50,7 @@ export function ProjectSection({
         </div>
       </div>
       <div>
-        {extra}
+        {/* {extra} */}
       </div>
     </section>
   );

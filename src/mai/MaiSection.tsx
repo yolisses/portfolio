@@ -21,7 +21,7 @@ export function MaiSection() {
         fontFamily: "'Source Sans Pro'",
         fontSize: '1.25em',
       }}
-      className="bg-slate-900 text-white flex-row-reverse"
+      className="bg-slate-900 text-white md:flex-row-reverse"
       extra={<MaiExtra />}
       about={(
         <>
