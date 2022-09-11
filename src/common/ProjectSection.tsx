@@ -6,11 +6,12 @@ interface ProjectSectionProps {
   name:string
   title:string
   about:ReactNode
+  extra:ReactNode
   tools:ToolName[]
 }
 
 export function ProjectSection({
-  title, name, about, tools,
+  title, name, about, tools, extra,
 }:ProjectSectionProps) {
   return (
     <section className="p-8">
@@ -29,6 +30,8 @@ export function ProjectSection({
         {about}
       </div>
       <Tools names={tools} />
+      <div />
+      {extra}
     </section>
   );
 }
