@@ -4,7 +4,7 @@
     }
 
     50% {
-        box-shadow: 0 0 15px #22c55e;
+        box-shadow: 0 0 15px #3b82f6;
     }
 
     100% {
@@ -18,9 +18,9 @@
 }
 
 .contact-button:hover {
-    @apply from-green-500 via-green-400 to-green-500 bg-gradient-to-r
+    @apply from-blue-600 via-blue-500 to-blue-600 bg-gradient-to-r
 }
 
 .contact-button {
-    @apply bg-green-500
+    @apply bg-blue-600
 }
