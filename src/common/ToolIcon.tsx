@@ -27,14 +27,16 @@ interface ToolIconProps {
 
 export function ToolIcon({ name }:ToolIconProps) {
   return (
-    <figure className="flex flex-col items-center">
+    <figure className="flex flex-col items-center w-[4.8rem]">
       <img
-        width={56}
-        alt="icon"
-        className="rounded-lg"
+        width={60}
+        alt={`${name} icon`}
         src={`/tools/${name}.svg`}
+        className="rounded-lg flex-shrink-0"
       />
-      <figcaption>{icons[name]}</figcaption>
+      <figcaption>
+        {icons[name]}
+      </figcaption>
     </figure>
   );
 }

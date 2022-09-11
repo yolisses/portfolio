@@ -6,11 +6,10 @@ interface ToolsProps {
 
 export function Tools({ names }:ToolsProps) {
   return (
-    <div>
+    <div className=" overflow-hidden">
       <h3>Tools</h3>
       <div
-        className="grid grid-flow-col grid-rows-1 w-fit text-sm gap-2"
-        style={{ gridAutoColumns: '1fr' }}
+        className="flex flex-row text-sm gap-2 overflow-x-auto"
       >
         {names.map((name) => (
           <ToolIcon
