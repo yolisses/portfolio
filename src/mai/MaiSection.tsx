@@ -1,31 +1,34 @@
 /* eslint-disable max-len */
-import { Tools } from '../common/Tools';
+import { ProjectSection } from '../common/ProjectSection';
 import { MaiExtra } from './MaiExtra';
 
 export function MaiSection() {
   return (
-    <div
-      style={{ fontFamily: "'Source Sans Pro'", fontSize: '1.25em' }}
-      className="bg-slate-900 text-white p-10 flex flex-col gap-8"
-    >
-      <div className="flex flex-row items-center gap-6">
-        <img
-          width={80}
-          alt="MAI icon"
-          src="/mai/logo.svg"
-        />
-        <h2 className="text-4xl">
-          Mai (Musical AI)
-        </h2>
-      </div>
-      <div className="flex flex-row gap-16">
-        <MaiExtra />
-        <div className="flex flex-col gap-8">
-          <h3>About</h3>
+    <ProjectSection
+      name="mai"
+      title="Mai (Musical AI)"
+      tools={[
+        'tensorflow',
+        'django',
+        'python',
+        'jupyter',
+        'websocket',
+        'react',
+        'typescript',
+        'tailwind',
+      ]}
+      style={{
+        fontFamily: "'Source Sans Pro'",
+        fontSize: '1.25em',
+      }}
+      className="bg-slate-900 text-white flex-row-reverse"
+      extra={<MaiExtra />}
+      about={(
+        <>
           <p>
             AI will make the vast majority of the pieces of music. Period. Because:
           </p>
-          <ul className="flex flex-col gap-2 list-disc">
+          <ul className="flex flex-col gap-1 list-disc pl-4">
             <li>
               A well-trained machine can generate music orders of magnitude faster than humans.
             </li>
@@ -42,19 +45,8 @@ export function MaiSection() {
               And this is my attempt to embrace this change.
             </li>
           </ul>
-          <Tools names={[
-            'tensorflow',
-            'django',
-            'python',
-            'jupyter',
-            'websocket',
-            'react',
-            'typescript',
-            'tailwind',
-          ]}
-          />
-        </div>
-      </div>
-    </div>
+        </>
+    )}
+    />
   );
 }
