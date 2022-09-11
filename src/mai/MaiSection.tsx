@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 import { StackIcon } from '../common/StackIcon';
+import { Tools } from '../common/Tools';
 import { MaiExhibition } from './MaiExhibition';
 
 export function MaiSection() {
@@ -42,20 +43,17 @@ export function MaiSection() {
               And this is my attempt to embrace this change.
             </li>
           </ul>
-          <h3>Tools</h3>
-          <div
-            className="grid grid-flow-col grid-rows-1 w-fit text-sm gap-2"
-            style={{ gridAutoColumns: '1fr' }}
-          >
-            <StackIcon name="tensorflow" />
-            <StackIcon name="django" />
-            <StackIcon name="python" />
-            <StackIcon name="jupyter" />
-            <StackIcon name="websocket" />
-            <StackIcon name="react" />
-            <StackIcon name="typescript" />
-            <StackIcon name="tailwind" />
-          </div>
+          <Tools names={[
+            'tensorflow',
+            'django',
+            'python',
+            'jupyter',
+            'websocket',
+            'react',
+            'typescript',
+            'tailwind',
+          ]}
+          />
         </div>
       </div>
     </div>

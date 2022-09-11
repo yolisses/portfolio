@@ -19,8 +19,10 @@ const icons = {
   java: 'Java',
 };
 
+export type ToolName = keyof(typeof icons);
+
 interface StackIconProps {
-  name:keyof(typeof icons)
+  name:ToolName
 }
 
 export function StackIcon({ name }:StackIconProps) {

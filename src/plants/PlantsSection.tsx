@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import { StackIcon } from '../common/StackIcon';
+import { Tools } from '../common/Tools';
 import { PlantsExtra } from './PlantsExtra';
 
 export function PlantsSection() {
@@ -44,24 +44,20 @@ export function PlantsSection() {
               It looked like a great idea. I found Facebook groups with dozens of thousands of members to do so. Even without location and map features. The people are constantly asking in the feed who lives next to them in a very inefficient way.
             </p>
           </div>
-          <h3>Tools</h3>
-          <div
-            className="grid grid-flow-col grid-rows-1 w-fit text-sm gap-2"
-            style={{ gridAutoColumns: '1fr' }}
-          >
-            <StackIcon name="nextjs" />
-            <StackIcon name="react" />
-            <StackIcon name="express" />
-            <StackIcon name="nodejs" />
-            <StackIcon name="typescript" />
-            <StackIcon name="postgresql" />
-            <StackIcon name="s3" />
-            <StackIcon name="socketio" />
-          </div>
+          <Tools names={[
+            'nextjs',
+            'react',
+            'express',
+            'nodejs',
+            'typescript',
+            'postgresql',
+            's3',
+            'socketio',
+          ]}
+          />
+          <PlantsExtra />
         </div>
-        <PlantsExtra />
       </div>
-
     </div>
   );
 }

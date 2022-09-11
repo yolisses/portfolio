@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 import { SonhinExtra } from './SonhinExtra';
 import { StackIcon } from '../common/StackIcon';
+import { Tools } from '../common/Tools';
 
 export function SonhinSection() {
   return (
@@ -41,19 +42,16 @@ export function SonhinSection() {
               And this is my attempt to embrace this change.
             </li>
           </ul>
-          <h3>Tools</h3>
-          <div
-            className="grid grid-flow-col grid-rows-1 w-fit text-sm gap-2"
-            style={{ gridAutoColumns: '1fr' }}
-          >
-            <StackIcon name="spring" />
-            <StackIcon name="java" />
-            <StackIcon name="neo4j" />
-            <StackIcon name="docker" />
-            <StackIcon name="react" />
-            <StackIcon name="typescript" />
-            <StackIcon name="tailwind" />
-          </div>
+          <Tools names={[
+            'spring',
+            'java',
+            'neo4j',
+            'docker',
+            'react',
+            'typescript',
+            'tailwind',
+          ]}
+          />
         </div>
         <SonhinExtra />
       </div>
