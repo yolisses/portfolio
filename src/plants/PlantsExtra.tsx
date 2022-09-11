@@ -4,8 +4,9 @@ export function PlantsExtra() {
   return (
     <div className="relative z-0">
       <img
-        src="/plants/plant.webp"
         alt=""
+        width={256}
+        src="/plants/plant.webp"
         className="absolute bottom-0 -left-32 -z-10"
       />
       <Smartphone>

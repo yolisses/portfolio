@@ -5,7 +5,7 @@ export function SonhinExtra() {
     <div className="relative z-0 pr-14">
       <img
         alt=""
-        width={180}
+        width={190}
         src="/sonhin/headphone.jpeg"
         className="absolute bottom-0 right-0 -z-10 brightness-75 -rotate-12"
       />
