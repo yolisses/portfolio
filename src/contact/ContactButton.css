@@ -4,7 +4,7 @@
     }
 
     50% {
-        box-shadow: 0 0 20px #22c55e;
+        box-shadow: 0 0 15px #22c55e;
     }
 
     100% {
@@ -13,7 +13,7 @@
 }
 
 .contact-button:hover {
-    animation: slide 2s ease infinite;
+    animation: slide 2s infinite;
     background-size: 200%;
 }
 
