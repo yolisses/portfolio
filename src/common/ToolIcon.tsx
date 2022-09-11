@@ -27,7 +27,7 @@ interface ToolIconProps {
 
 export function ToolIcon({ name }:ToolIconProps) {
   return (
-    <figure className="flex flex-col items-center w-[4.8rem]">
+    <figure className="flex flex-col items-center w-[18vw] md:w-[4.8rem] flex-shrink-0">
       <img
         width={60}
         alt={`${name} icon`}
