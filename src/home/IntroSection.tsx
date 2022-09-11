@@ -1,4 +1,5 @@
 import GitHubCalendar from 'react-github-calendar';
+import { IntroHeader } from './IntroHeader';
 
 export function IntroSection() {
   return (
@@ -6,16 +7,7 @@ export function IntroSection() {
       style={{ backgroundImage: 'url("intro/intro.jpg")' }}
       className="text-white min-h-screen flex flex-col relative bg-cover bg-no-repeat bg-center bg-fixed"
     >
-      <div className="flex flex-row p-2 items-center gap-2">
-        <img
-          src="/ulisses/logo.svg"
-          width={32}
-          alt="logo"
-        />
-        Ulisses Albuquerque Pereira - Portfolio
-        <div className="flex-1" />
-        Contact
-      </div>
+      <IntroHeader />
       <div className="flex-1 flex center">
         <h2
           className="text-6xl"
