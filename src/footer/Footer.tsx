@@ -8,7 +8,7 @@ export function Footer() {
       style={{
         backgroundImage: 'url("footer/footer.jpg")',
       }}
-      className="text-white gap-2 text-sm justify-around bg-gray-900 bg-cover bg-center bg-fixed p-4 pt-8 grid grid-flow-col"
+      className="text-white gap-2 text-sm justify-around bg-gray-900 bg-cover bg-center bg-fixed p-4 pt-8 grid grid-flow-col relative z-20"
     >
       <div className="flex flex-col gap-2">
         <div>
