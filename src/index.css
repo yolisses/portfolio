@@ -44,5 +44,9 @@ figcaption {
 }
 
 body {
-    @apply overflow-x-hidden
+    @apply overflow-x-hidden bg-black
+}
+
+iframe {
+    @apply pointer-events-none
 }
