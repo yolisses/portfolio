@@ -1,0 +1,26 @@
+@keyframes slide {
+    0% {
+        background-position-x: 100%;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #22c55e;
+    }
+
+    100% {
+        background-position-x: -100%;
+    }
+}
+
+.contact-button:hover {
+    animation: slide 2s ease infinite;
+    background-size: 200%;
+}
+
+.contact-button:hover {
+    @apply from-green-600 via-green-500 to-green-600 bg-gradient-to-r
+}
+
+.contact-button {
+    @apply bg-green-600
+}

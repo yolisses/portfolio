@@ -1,4 +1,5 @@
 import GitHubCalendar from 'react-github-calendar';
+import { ContactButton } from '../contact/ContactButton';
 import { IntroHeader } from './IntroHeader';
 
 export function IntroSection() {
@@ -14,8 +15,11 @@ export function IntroSection() {
       >
         Recruit who goes the extra mile
       </h2>
+      <ContactButton />
       <div>
         <a
+          target="_blank"
+          rel="noreferrer"
           className="hover:underline"
           href="https://github.com/yolisses"
         >
