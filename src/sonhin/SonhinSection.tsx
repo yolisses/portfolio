@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import { SonhinExtra } from './SonhinExtra';
-import { StackIcon } from '../common/StackIcon';
+import { ToolIcon } from '../common/ToolIcon';
 import { Tools } from '../common/Tools';
 
 export function SonhinSection() {

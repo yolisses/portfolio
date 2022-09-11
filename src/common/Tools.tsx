@@ -1,4 +1,4 @@
-import { StackIcon, ToolName } from './StackIcon';
+import { ToolIcon, ToolName } from './ToolIcon';
 
 interface ToolsProps {
   names:ToolName[]
@@ -13,7 +13,7 @@ export function Tools({ names }:ToolsProps) {
         style={{ gridAutoColumns: '1fr' }}
       >
         {names.map((name) => (
-          <StackIcon
+          <ToolIcon
             key={name}
             name={name}
           />

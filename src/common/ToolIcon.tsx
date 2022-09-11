@@ -1,7 +1,12 @@
 const icons = {
+  s3: 'S3',
+  java: 'Java',
   react: 'React',
+  neo4j: 'Neo4j',
   python: 'Python',
   django: 'Django',
+  spring: 'Spring',
+  docker: 'Docker',
   nodejs: 'Node.js',
   nextjs: 'Next.js',
   express: 'Express',
@@ -12,20 +17,15 @@ const icons = {
   typescript: 'Typescript',
   postgresql: 'PostgreSQL',
   tensorflow: 'Tensorflow',
-  neo4j: 'Neo4j',
-  spring: 'Spring',
-  docker: 'Docker',
-  s3: 'S3',
-  java: 'Java',
 };
 
 export type ToolName = keyof(typeof icons);
 
-interface StackIconProps {
+interface ToolIconProps {
   name:ToolName
 }
 
-export function StackIcon({ name }:StackIconProps) {
+export function ToolIcon({ name }:ToolIconProps) {
   return (
     <figure className="flex flex-col items-center">
       <img

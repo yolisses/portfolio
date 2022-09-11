@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import { StackIcon } from '../common/StackIcon';
+import { ToolIcon } from '../common/ToolIcon';
 import { Tools } from '../common/Tools';
 import { MaiExhibition } from './MaiExhibition';
 
