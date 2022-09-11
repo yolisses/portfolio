@@ -2,7 +2,7 @@ import { Smartphone } from '../common/Smartphone';
 
 export function SonhinExtra() {
   return (
-    <div className="relative z-0 pr-14">
+    <div className="relative z-0 pr-8">
       <img
         alt=""
         width={190}

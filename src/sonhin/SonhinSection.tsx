@@ -32,6 +32,57 @@ export function SonhinSection() {
               And this is my attempt to embrace this change.
             </li>
           </ul>
+          <ul className="flex flex-col gap-2 list-disc">
+            <li>
+              A well-trained machine can generate music orders of magnitude faster than humans.
+            </li>
+            <li>
+              Can analyze the feedback from people at the seconds level endless, with petabytes of data.
+            </li>
+            <li>
+              Can learn the preferences of individual listeners and create new music, especially for them.
+            </li>
+            <li>
+              It is all the way cheaper and can be used on demand in videos, games, or even in a real-time real-life soundtrack.
+            </li>
+            <li>
+              And this is my attempt to embrace this change.
+            </li>
+          </ul>
+          <ul className="flex flex-col gap-2 list-disc">
+            <li>
+              A well-trained machine can generate music orders of magnitude faster than humans.
+            </li>
+            <li>
+              Can analyze the feedback from people at the seconds level endless, with petabytes of data.
+            </li>
+            <li>
+              Can learn the preferences of individual listeners and create new music, especially for them.
+            </li>
+            <li>
+              It is all the way cheaper and can be used on demand in videos, games, or even in a real-time real-life soundtrack.
+            </li>
+            <li>
+              And this is my attempt to embrace this change.
+            </li>
+          </ul>
+          <ul className="flex flex-col gap-2 list-disc">
+            <li>
+              A well-trained machine can generate music orders of magnitude faster than humans.
+            </li>
+            <li>
+              Can analyze the feedback from people at the seconds level endless, with petabytes of data.
+            </li>
+            <li>
+              Can learn the preferences of individual listeners and create new music, especially for them.
+            </li>
+            <li>
+              It is all the way cheaper and can be used on demand in videos, games, or even in a real-time real-life soundtrack.
+            </li>
+            <li>
+              And this is my attempt to embrace this change.
+            </li>
+          </ul>
         </>
       )}
       tools={[

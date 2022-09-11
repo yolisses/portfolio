@@ -49,7 +49,7 @@ export function ProjectSection({
           </div>
         </div>
       </div>
-      <div className="max-w-screen-sm md:max-w-none md:overflow-visible overflow-hidden flex flex-col center">
+      <div className="max-w-screen-sm md:max-w-none md:h-screen md:overflow-visible overflow-hidden flex flex-col center sticky top-0">
         {extra}
       </div>
     </section>
