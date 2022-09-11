@@ -6,7 +6,7 @@ interface ProjectSectionProps {
   name:string
   title:string
   about:ReactNode
-  extra:ReactNode
+  extra?:ReactNode
   tools:ToolName[]
   className?:string
   style?:CSSProperties
@@ -17,10 +17,10 @@ export function ProjectSection({
 }:ProjectSectionProps) {
   return (
     <section
-      className={`p-4 md:p-8 flex gap-8 flex-col md:flex-row ${className}`}
+      className={`flex gap-8 flex-col md:flex-row ${className}`}
       style={style}
     >
-      <div>
+      <div className="p-4">
         <div className="flex flex-row items-center gap-4">
           <img
             alt="logo"
@@ -49,8 +49,8 @@ export function ProjectSection({
           </div>
         </div>
       </div>
-      <div>
-        {/* {extra} */}
+      <div className="max-w-screen-sm md:max-w-none md:overflow-visible overflow-hidden flex flex-col center">
+        {extra}
       </div>
     </section>
   );

@@ -7,7 +7,7 @@ export function PlantsExtra() {
         alt=""
         width={256}
         src="/plants/plant.webp"
-        className="absolute bottom-0 -left-32 -z-10"
+        className="absolute bottom-0 -left-16 -z-10"
       />
       <Smartphone>
         <iframe
