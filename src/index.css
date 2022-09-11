@@ -44,7 +44,7 @@ figcaption {
 }
 
 body {
-    @apply overflow-x-hidden bg-black
+    @apply overflow-x-hidden w-screen
 }
 
 iframe {
