@@ -8,18 +8,7 @@ export function MaiSection() {
       style={{ fontFamily: "'Source Sans Pro'", fontSize: '1.25em' }}
       className="bg-slate-900 text-white p-10 flex flex-col gap-8"
     >
-      <div className="flex flex-row items-center gap-6">
-        <img
-          width={80}
-          alt="MAI icon"
-          src="/mai/logo.svg"
-        />
-        <h2 className="text-4xl">
-          Mai (Musical AI)
-        </h2>
-      </div>
       <div className="flex flex-row gap-16">
-        <MaiExtra />
         <div className="flex flex-col gap-8">
           <h3>About</h3>
           <p>
