@@ -10,13 +10,13 @@ export function IntroSection() {
     >
       <IntroHeader />
       <h2
-        className="text-6xl mx-8"
+        className="text-6xl mx-4 md:mx-8"
         style={{ fontFamily: "'Bitter','Ubuntu','sans-serif'" }}
       >
         Recruit who goes the extra mile
       </h2>
       <ContactButton />
-      <div className="mx-8">
+      <div className="mx-4 md:mx-8 mb-2">
         <a
           target="_blank"
           rel="noreferrer"
