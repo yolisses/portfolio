@@ -7,7 +7,7 @@ import { PianoRoll } from './PianoRoll';
 import { PlayButton } from './PlayButton';
 import { PianoPicture } from './PianoPicture';
 
-export function MaiExhibition() {
+export function MaiExtra() {
   const [elapsed, setElapsed] = useState(0);
   const [maxTime, setMaxTime] = useState(0);
   const [playing, setPlaying] = useState(false);

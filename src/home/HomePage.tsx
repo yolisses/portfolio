@@ -5,7 +5,7 @@ import { MaiSection } from '../mai/MaiSection';
 import { PlantsSection } from '../plants/PlantsSection';
 import { SonhinSection } from '../sonhin/SonhinSection';
 import { ProjectSection } from '../common/ProjectSection';
-import { MaiExhibition } from '../mai/MaiExhibition';
+import { MaiExtra } from '../mai/MaiExtra';
 
 export function HomePage() {
   return (
@@ -24,7 +24,7 @@ export function HomePage() {
           'typescript',
           'tailwind',
         ]}
-        extra={<MaiExhibition />}
+        extra={<MaiExtra />}
         about={(
           <>
             <p>

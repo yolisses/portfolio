@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import { ToolIcon } from '../common/ToolIcon';
 import { Tools } from '../common/Tools';
-import { MaiExhibition } from './MaiExhibition';
+import { MaiExtra } from './MaiExtra';
 
 export function MaiSection() {
   return (
@@ -20,7 +20,7 @@ export function MaiSection() {
         </h2>
       </div>
       <div className="flex flex-row gap-16">
-        <MaiExhibition />
+        <MaiExtra />
         <div className="flex flex-col gap-8">
           <h3>About</h3>
           <p>
