@@ -17,9 +17,6 @@ export function MaiSection() {
         <h2 className="text-4xl">
           Mai (Musical AI)
         </h2>
-        <div className="bg-purple-900 w-fit px-1 rounded-full text-base">
-          Pre Release
-        </div>
       </div>
       <div className="flex flex-row gap-16">
         <MaiExhibition />
