@@ -6,17 +6,17 @@ export function IntroSection() {
   return (
     <section
       style={{ backgroundImage: 'url("intro/intro.jpg")' }}
-      className="text-white min-h-screen flex flex-col justify-between items-center bg-cover bg-no-repeat bg-center bg-fixed"
+      className="text-white h-screen flex flex-col justify-between items-center bg-cover bg-no-repeat bg-center bg-fixed"
     >
       <IntroHeader />
       <h2
-        className="text-6xl"
+        className="text-6xl mx-8"
         style={{ fontFamily: "'Bitter','Ubuntu','sans-serif'" }}
       >
         Recruit who goes the extra mile
       </h2>
       <ContactButton />
-      <div>
+      <div className="mx-8">
         <a
           target="_blank"
           rel="noreferrer"
