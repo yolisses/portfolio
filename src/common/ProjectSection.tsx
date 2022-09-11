@@ -1,9 +1,17 @@
+import { ReactNode } from 'react';
+import { ToolName } from './ToolIcon';
+import { Tools } from './Tools';
+
 interface ProjectSectionProps {
   name:string
   title:string
+  about:ReactNode
+  tools:ToolName[]
 }
 
-export function ProjectSection({ title, name }:ProjectSectionProps) {
+export function ProjectSection({
+  title, name, about, tools,
+}:ProjectSectionProps) {
   return (
     <section className="p-8">
       <div className="flex flex-row items-center gap-4">
@@ -16,6 +24,11 @@ export function ProjectSection({ title, name }:ProjectSectionProps) {
           {title}
         </h2>
       </div>
+      <div>
+        <h3>About</h3>
+        {about}
+      </div>
+      <Tools names={tools} />
     </section>
   );
 }
