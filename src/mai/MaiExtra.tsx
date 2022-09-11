@@ -56,7 +56,7 @@ export function MaiExtra() {
   }, [ref]);
 
   return (
-    <div className="flex-1 relative">
+    <div className="flex-1 relative px-8 pb-3">
       <div className="relative z-10">
         <PianoRoll
           playing={playing || handling}
