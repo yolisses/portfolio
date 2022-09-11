@@ -13,7 +13,7 @@
 }
 
 .contact-button:hover {
-    animation: slide 2s infinite;
+    animation: slide 2.5s linear infinite;
     background-size: 200%;
 }
 
