@@ -4,9 +4,9 @@ export function SonhinExtra() {
   return (
     <div className="relative z-0 pr-14">
       <img
-        src="/sonhin/headphone.png"
         alt=""
         width={180}
+        src="/sonhin/headphone.jpeg"
         className="absolute bottom-0 right-0 -z-10 brightness-75 -rotate-12"
       />
       <Smartphone>
