@@ -42,7 +42,7 @@ export function ProjectSection({
             <h2>{title}</h2>
           )}
         </div>
-        <div>
+        <div className="flex flex-col gap-8">
           {children}
         </div>
       </div>

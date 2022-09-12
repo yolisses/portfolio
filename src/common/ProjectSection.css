@@ -1,14 +1,7 @@
-.project-section h3 {
-    @apply mt-8 mb-2
-}
-
 .project-section ul {
     @apply list-disc pl-5 my-1
 }
 
-.project-section li {
-    @apply my-1
-}
 
 .project-section p {
     @apply indent-4

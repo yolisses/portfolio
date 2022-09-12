@@ -6,7 +6,7 @@ interface ToolsProps {
 
 export function Tools({ names }:ToolsProps) {
   return (
-    <>
+    <div>
       <h3>Tools</h3>
       <div className="overflow-hidden">
         <div
@@ -20,6 +20,6 @@ export function Tools({ names }:ToolsProps) {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }

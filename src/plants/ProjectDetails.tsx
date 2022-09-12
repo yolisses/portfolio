@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unknown-property */
-import { ReactNode, SyntheticEvent, useState } from 'react';
-import { FaChevronDown, FaChevronRight } from 'react-icons/fa';
+import { ReactNode, useState } from 'react';
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 interface ProjectDetailsProps {
   children:ReactNode
@@ -8,35 +8,44 @@ interface ProjectDetailsProps {
 }
 
 export function ProjectDetails({ children, title }:ProjectDetailsProps) {
-  const [open, setOpen] = useState(false);
+  const [closed, setClosed] = useState(false);
+  const Icon = closed ? FaChevronDown : FaChevronUp;
+  const [ariaId, setAriaId] = useState(`${Math.random()}`);
 
-  function handleToggle(e: SyntheticEvent<HTMLDetailsElement, Event>) {
-    setOpen(e.currentTarget.open);
+  function handleToggle() {
+    setClosed((old) => !old);
   }
 
-  const Icon = open ? FaChevronDown : FaChevronRight;
-
   return (
-    <details
-      open={open}
-      onToggle={handleToggle}
-    >
-      <summary className="list-none mt-8">
-        <Icon className="inline mr-1 mb-3" />
-        <h3 className="inline">
-          {title}
-        </h3>
-        {!open && (
-          <div className="h-14 overflow-y-hidden relative">
-            {children}
-            <div
-              className="h-8 absolute bottom-0 w-full"
-              style={{ backgroundImage: 'linear-gradient(to top, var(--fader-color), transparent)' }}
-            />
-          </div>
-        )}
-      </summary>
-      {children}
-    </details>
+    <div>
+      <h3 className="inline">
+        {title}
+      </h3>
+      <div
+        id={ariaId}
+        className="relative"
+        style={{
+          height: closed ? '5rem' : undefined,
+          overflowY: closed ? 'hidden' : undefined,
+        }}
+      >
+        {children}
+        <div
+          className="h-8 absolute bottom-0 w-full"
+          style={{ backgroundImage: closed ? 'linear-gradient(to top, var(--fader-color), transparent)' : undefined }}
+        />
+      </div>
+      <button
+        onClick={handleToggle}
+        aria-controls={ariaId}
+        aria-expanded={!closed}
+        className="p-2 text-sm flex flex-row center gap-1"
+      >
+        <Icon />
+        Show
+        {' '}
+        {closed ? 'more' : 'less'}
+      </button>
+    </div>
   );
 }
