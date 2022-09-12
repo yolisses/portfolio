@@ -19,7 +19,7 @@ export function MaiSection() {
       <p>
         AI will make the vast majority of the pieces of music. Period. Because:
       </p>
-      <ul className="flex flex-col gap-1 list-disc pl-4">
+      <ul>
         <li>
           A well-trained machine can generate music orders of magnitude faster than humans.
         </li>

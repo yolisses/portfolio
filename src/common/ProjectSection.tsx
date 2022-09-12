@@ -1,5 +1,6 @@
 /* eslint-disable react/require-default-props */
 import { CSSProperties, ReactNode } from 'react';
+import './ProjectSection.css';
 
 interface ProjectSectionProps {
   name:string
@@ -16,10 +17,10 @@ export function ProjectSection({
 }:ProjectSectionProps) {
   return (
     <section
-      className={`flex gap-8 flex-col text-lg md:flex-row ${className}`}
+      className={`project-section flex gap-8 flex-col text-lg md:flex-row ${className}`}
       style={style}
     >
-      <div className="p-4">
+      <div className="p-4 flex-1">
         <div className="flex flex-row items-center gap-4 text-4xl">
           <img
             alt="logo"
