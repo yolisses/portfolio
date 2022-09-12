@@ -2,6 +2,7 @@
 import { ProjectSection } from '../common/ProjectSection';
 import { Tools } from '../common/Tools';
 import { PlantsExtra } from './PlantsExtra';
+import { ProjectDetails } from './ProjectDetails';
 
 export function PlantsSection() {
   return (
@@ -20,6 +21,11 @@ export function PlantsSection() {
       <p>
         It looked like a great idea. I found Facebook groups with dozens of thousands of members to do so. Even without location and map features. The people are constantly asking in the feed who lives next to them in a very inefficient way.
       </p>
+
+      <ProjectDetails title="Motivation">
+        a
+      </ProjectDetails>
+
       <Tools names={[
         'nextjs',
         'react',
