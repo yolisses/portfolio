@@ -17,27 +17,25 @@ export function ProjectDetails({ children, title }:ProjectDetailsProps) {
   const Icon = open ? FaChevronDown : FaChevronRight;
 
   return (
-    <>
-      <details onToggle={handleToggle}>
-        <summary className="list-none mt-8">
-          <Icon className="inline mr-1 mb-3" />
-          <h3 className="inline">
-            {title}
-          </h3>
-        </summary>
-        {children}
-      </details>
-      {!open && (
-      <div
-        className="h-20 md:h-14 overflow-hidden relative"
-      >
-        {children}
-        <div
-          className="h-8 absolute bottom-0 w-full"
-          style={{ backgroundImage: 'linear-gradient(to top, var(--fader-color), transparent)' }}
-        />
-      </div>
-      )}
-    </>
+    <details onToggle={handleToggle}>
+      <summary className="list-none mt-8">
+        <Icon className="inline mr-1 mb-3" />
+        <h3 className="inline">
+          {title}
+        </h3>
+        {!open && (
+          <div
+            className="h-20 md:h-14 overflow-hidden relative"
+          >
+            {children}
+            <div
+              className="h-8 absolute bottom-0 w-full"
+              style={{ backgroundImage: 'linear-gradient(to top, var(--fader-color), transparent)' }}
+            />
+          </div>
+        )}
+      </summary>
+      {children}
+    </details>
   );
 }
