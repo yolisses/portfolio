@@ -7,8 +7,9 @@ export function PlantsSection() {
     <ProjectSection
       name="plants"
       title="SuasPlantas"
-      className="bg-green-100"
       extra={<PlantsExtra />}
+      className="bg-green-100"
+      url="https://suasplantas.com"
       style={{ fontFamily: "'Ubuntu', sans-serif" }}
       tools={[
         'nextjs',
