@@ -24,32 +24,36 @@ export function PlantsSection() {
         </p>
       </div>
       <ProjectDetails title="Motivation">
+        <p>I had this idea by questioning what more the internet can give for free (beyond education, software and entertainment), and by observing a habit of people of my region of giving plant seedlings to friends</p>
+        <p>I searched and this idea looks pretty good. I found Facebook groups with tens of thousands of members to do that, even without location features. Constant feed posts are looking for somebody around, in a very inefficient way.</p>
         <p>
-          Eu tive essa ideia me questionando o que mais a internet poderia dar de graça (além de educação, software e entretenimento) e observando o hábito de pessoas da minha região de dar plantas umas às outras.
-        </p>
-        <p>
-          Eu pesquisei e parece ser uma ótima ideia.
-          Encontrei grupos no Facebook com dezenas de milhares de membros com essa finalidade, mesmo sem recursos de localização. Há postagens constantes nos feeds perguntando quem mora próximo. De forma bem ineficiente.
-        </p>
-        <p>
-          Um sistema próprio para isso pode:
+          A custom system can:
         </p>
         <ul>
-          <li>
-            Filtrar resultados por localização e tipo de planta
-          </li>
-          <li>
-            Notificar quando alguma planta próxima estiver disponível
-          </li>
-          <li>
-            Exibir feedback de confiabilidade
-          </li>
-          <li>
-            Manter uma lista pública de plantas que a pessoa esteja procurando
-          </li>
+          <li>Filter by location and plant-specific attributes</li>
+          <li>Notify new plants or people around</li>
+          <li>Keep public lists of desired plants</li>
+          <li>Have a person credibility score</li>
         </ul>
       </ProjectDetails>
-
+      <ProjectDetails title="Technical Features">
+        <ul>
+          <li>Automatic IP location detection</li>
+          <li>Images upload</li>
+          <li>Distance results filter</li>
+          <li>Geocoding and reverse geocoding</li>
+          <li>Interactive map</li>
+          <li>Full text search, using PostgresSQL</li>
+          <li>Push notifications</li>
+          <li>Progressive Web App (PWA)</li>
+          <li>Available in Play Store</li>
+          <li>Collaborative filtering recommendations</li>
+          <li>Social login with Google and Facebook</li>
+          <li>4 distinct analytics tools</li>
+          <li>Landing page optimized with A/B tests</li>
+          <li>Google Ads integration to maximize sign ups</li>
+        </ul>
+      </ProjectDetails>
       <Tools names={[
         'nextjs',
         'react',

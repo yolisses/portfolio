@@ -3,7 +3,7 @@
 }
 
 .project-section ul {
-    @apply list-disc pl-4 my-1
+    @apply list-disc pl-5 my-1
 }
 
 .project-section li {
