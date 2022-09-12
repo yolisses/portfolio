@@ -18,8 +18,8 @@ export function MaiSection() {
         'tailwind',
       ]}
       style={{
-        fontFamily: "'Source Sans Pro'",
         fontSize: '1.25em',
+        fontFamily: "'Source Sans Pro'",
       }}
       className="bg-slate-900 text-white md:flex-row-reverse"
       extra={<MaiExtra />}

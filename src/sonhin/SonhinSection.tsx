@@ -10,7 +10,10 @@ export function SonhinSection() {
       extra={<SonhinExtra />}
       url="https://sonhin.com"
       className="bg-zinc-800 text-white"
-      style={{ fontFamily: "'Source Sans Pro'", fontSize: '1.25em' }}
+      style={{
+        fontSize: '1.25em',
+        fontFamily: "'Source Sans Pro'",
+      }}
       tools={[
         'spring',
         'java',
