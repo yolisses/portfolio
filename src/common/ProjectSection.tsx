@@ -1,21 +1,18 @@
 /* eslint-disable react/require-default-props */
 import { CSSProperties, ReactNode } from 'react';
-import { ToolName } from './ToolIcon';
-import { Tools } from './Tools';
 
 interface ProjectSectionProps {
   name:string
   url?:string
   title:string
   extra?:ReactNode
-  tools:ToolName[]
   className?:string
   children:ReactNode
   style?:CSSProperties
 }
 
 export function ProjectSection({
-  title, name, children, tools, extra, style, className, url,
+  title, name, children, extra, style, className, url,
 }:ProjectSectionProps) {
   return (
     <section
@@ -44,7 +41,6 @@ export function ProjectSection({
         </div>
         <div>
           {children}
-          <Tools names={tools} />
         </div>
       </div>
       <div className="max-w-screen-sm md:max-w-none md:h-screen md:overflow-visible overflow-hidden flex flex-col center sticky top-0">

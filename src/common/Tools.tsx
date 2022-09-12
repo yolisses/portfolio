@@ -7,7 +7,7 @@ interface ToolsProps {
 export function Tools({ names }:ToolsProps) {
   return (
     <>
-      <h3 className="mt-8 mb-2">Tools</h3>
+      <h3>Tools</h3>
       <div className="overflow-hidden">
         <div
           className="flex flex-row text-sm gap-2 overflow-x-auto scrollbar-hide"

@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 import { ProjectSection } from '../common/ProjectSection';
+import { Tools } from '../common/Tools';
 import { PlantsExtra } from './PlantsExtra';
 
 export function PlantsSection() {
@@ -11,7 +12,15 @@ export function PlantsSection() {
       className="bg-green-100"
       url="https://suasplantas.com"
       style={{ fontFamily: "'Ubuntu', sans-serif" }}
-      tools={[
+    >
+      <h3>About</h3>
+      <p>
+        SuasPlantas is a Tinder-like app to get plant seeds and seedlings for free. I had this idea by questioning what else the internet can give without costs (beyond software, education, and entertainment) and by observing a common habit of people around me of giving away plants.
+      </p>
+      <p>
+        It looked like a great idea. I found Facebook groups with dozens of thousands of members to do so. Even without location and map features. The people are constantly asking in the feed who lives next to them in a very inefficient way.
+      </p>
+      <Tools names={[
         'nextjs',
         'react',
         'express',
@@ -21,13 +30,7 @@ export function PlantsSection() {
         's3',
         'socketio',
       ]}
-    >
-      <p>
-        SuasPlantas is a Tinder-like app to get plant seeds and seedlings for free. I had this idea by questioning what else the internet can give without costs (beyond software, education, and entertainment) and by observing a common habit of people around me of giving away plants.
-      </p>
-      <p>
-        It looked like a great idea. I found Facebook groups with dozens of thousands of members to do so. Even without location and map features. The people are constantly asking in the feed who lives next to them in a very inefficient way.
-      </p>
+      />
     </ProjectSection>
   );
 }

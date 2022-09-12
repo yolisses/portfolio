@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 import { ProjectSection } from '../common/ProjectSection';
+import { Tools } from '../common/Tools';
 import { MaiExtra } from './MaiExtra';
 
 export function MaiSection() {
@@ -7,16 +8,6 @@ export function MaiSection() {
     <ProjectSection
       name="mai"
       title="Mai (Musical AI)"
-      tools={[
-        'tensorflow',
-        'django',
-        'python',
-        'jupyter',
-        'websocket',
-        'react',
-        'typescript',
-        'tailwind',
-      ]}
       style={{
         fontSize: '1.25em',
         fontFamily: "'Source Sans Pro'",
@@ -24,6 +15,7 @@ export function MaiSection() {
       className="bg-slate-900 text-white md:flex-row-reverse"
       extra={<MaiExtra />}
     >
+      <h3>About</h3>
       <p>
         AI will make the vast majority of the pieces of music. Period. Because:
       </p>
@@ -44,6 +36,17 @@ export function MaiSection() {
           And this is my attempt to embrace this change.
         </li>
       </ul>
+      <Tools names={[
+        'tensorflow',
+        'django',
+        'python',
+        'jupyter',
+        'websocket',
+        'react',
+        'typescript',
+        'tailwind',
+      ]}
+      />
     </ProjectSection>
   );
 }
