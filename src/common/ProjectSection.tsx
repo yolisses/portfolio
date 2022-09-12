@@ -1,21 +1,21 @@
 /* eslint-disable react/require-default-props */
 import { CSSProperties, ReactNode } from 'react';
-import { ToolIcon, ToolName } from './ToolIcon';
+import { ToolName } from './ToolIcon';
 import { Tools } from './Tools';
 
 interface ProjectSectionProps {
   name:string
   url?:string
   title:string
-  about:ReactNode
   extra?:ReactNode
   tools:ToolName[]
   className?:string
+  children:ReactNode
   style?:CSSProperties
 }
 
 export function ProjectSection({
-  title, name, about, tools, extra, style, className, url,
+  title, name, children, tools, extra, style, className, url,
 }:ProjectSectionProps) {
   return (
     <section
@@ -43,8 +43,7 @@ export function ProjectSection({
           )}
         </div>
         <div>
-          <h3 className="mt-8 mb-2">About</h3>
-          {about}
+          {children}
           <Tools names={tools} />
         </div>
       </div>
