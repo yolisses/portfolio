@@ -8,7 +8,7 @@ interface ProjectDetailsProps {
 }
 
 export function ProjectDetails({ children, title }:ProjectDetailsProps) {
-  const [closed, setClosed] = useState(false);
+  const [closed, setClosed] = useState(true);
   const Icon = closed ? FaChevronDown : FaChevronUp;
   const [ariaId, setAriaId] = useState(`${Math.random()}`);
 
