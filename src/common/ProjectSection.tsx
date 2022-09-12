@@ -17,7 +17,7 @@ export function ProjectSection({
 }:ProjectSectionProps) {
   return (
     <section
-      className={`flex gap-8 flex-col md:flex-row ${className}`}
+      className={`flex gap-8 flex-col text-lg md:flex-row ${className}`}
       style={style}
     >
       <div className="p-4">

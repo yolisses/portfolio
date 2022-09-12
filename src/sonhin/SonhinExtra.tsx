@@ -2,7 +2,7 @@ import { Smartphone } from '../common/Smartphone';
 
 export function SonhinExtra() {
   return (
-    <div className="relative z-0 pr-8">
+    <div className="relative z-0 pr-8 overflow-hidden">
       <img
         alt=""
         width={190}

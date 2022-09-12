@@ -43,10 +43,6 @@ figcaption {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    @apply overflow-x-hidden w-screen
-}
-
 iframe {
     @apply pointer-events-none
 }
