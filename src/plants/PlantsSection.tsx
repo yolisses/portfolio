@@ -24,7 +24,7 @@ export function PlantsSection() {
         </p>
       </div>
       <ProjectDetails title="Motivation">
-        <p>I had this idea by questioning what more the internet can give for free (beyond education, software and entertainment), and by observing a habit of people of my region of giving plant seedlings to friends</p>
+        <p>I had this idea by questioning what more the internet can give for free (beyond education, software and entertainment), and by observing a habit of people of my region of giving plant seedlings to friends.</p>
         <p>I searched and this idea looks pretty good. I found Facebook groups with tens of thousands of members to do that, even without location features. Constant feed posts are looking for somebody around, in a very inefficient way.</p>
         <p>
           A custom system can:
