@@ -10,15 +10,17 @@ interface ProjectSectionProps {
   className?:string
   children:ReactNode
   style?:CSSProperties
+  faderColor?:string
 }
 
 export function ProjectSection({
-  title, name, children, extra, style, className, url,
+  title, name, children, extra, style, className, url, faderColor,
 }:ProjectSectionProps) {
+  const faderStyle = { '--fader-color': faderColor } as CSSProperties;
   return (
     <section
       className={`project-section flex gap-8 flex-col text-lg md:flex-row ${className}`}
-      style={style}
+      style={{ ...style, ...faderStyle }}
     >
       <div className="p-4 flex-1">
         <div className="flex flex-row items-center gap-4 text-4xl">

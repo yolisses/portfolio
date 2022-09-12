@@ -11,19 +11,43 @@ export function PlantsSection() {
       title="SuasPlantas"
       extra={<PlantsExtra />}
       className="bg-green-100"
+      faderColor="rgb(220 252 231)"
       url="https://suasplantas.com"
       style={{ fontFamily: "'Ubuntu', sans-serif" }}
     >
-      <h3>About</h3>
-      <p>
-        SuasPlantas is a Tinder-like app to get plant seeds and seedlings for free. I had this idea by questioning what else the internet can give without costs (beyond software, education, and entertainment) and by observing a common habit of people around me of giving away plants.
-      </p>
-      <p>
-        It looked like a great idea. I found Facebook groups with dozens of thousands of members to do so. Even without location and map features. The people are constantly asking in the feed who lives next to them in a very inefficient way.
-      </p>
-
+      <div className="explanation">
+        <p>
+          SuasPlantas is a Tinder-like web app to get plant seeds and seedlings for free.
+        </p>
+        <p>
+          It has built-in messaging and location features.
+        </p>
+      </div>
       <ProjectDetails title="Motivation">
-        a
+        <p>
+          Eu tive essa ideia me questionando o que mais a internet poderia dar de graça (além de educação, software e entretenimento) e observando o hábito de pessoas da minha região de dar plantas umas às outras.
+        </p>
+        <p>
+          Eu pesquisei e parece ser uma ótima ideia.
+          Encontrei grupos no Facebook com dezenas de milhares de membros com essa finalidade, mesmo sem recursos de localização. Há postagens constantes nos feeds perguntando quem mora próximo. De forma bem ineficiente.
+        </p>
+        <p>
+          Um sistema próprio para isso pode:
+        </p>
+        <ul>
+          <li>
+            Filtrar resultados por localização e tipo de planta
+          </li>
+          <li>
+            Notificar quando alguma planta próxima estiver disponível
+          </li>
+          <li>
+            Exibir feedback de confiabilidade
+          </li>
+          <li>
+            Manter uma lista pública de plantas que a pessoa esteja procurando
+          </li>
+        </ul>
       </ProjectDetails>
 
       <Tools names={[
