@@ -9,8 +9,6 @@ export function IntroHeader() {
       <h1>
         Ulisses Albuquerque Pereira - Portfolio
       </h1>
-      <div className="flex-1" />
-      Contact
     </header>
   );
 }
