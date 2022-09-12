@@ -1,6 +1,7 @@
 /* eslint-disable react/require-default-props */
 import { CSSProperties, ReactNode } from 'react';
 import { ToolIcon, ToolName } from './ToolIcon';
+import { Tools } from './Tools';
 
 interface ProjectSectionProps {
   name:string
@@ -44,19 +45,7 @@ export function ProjectSection({
         <div>
           <h3 className="mt-8 mb-2">About</h3>
           {about}
-          <h3 className="mt-8 mb-2">Tools</h3>
-          <div className="overflow-hidden">
-            <div
-              className="flex flex-row text-sm gap-2 overflow-x-auto scrollbar-hide"
-            >
-              {tools.map((tool) => (
-                <ToolIcon
-                  key={name}
-                  name={tool}
-                />
-              ))}
-            </div>
-          </div>
+          <Tools names={tools} />
         </div>
       </div>
       <div className="max-w-screen-sm md:max-w-none md:h-screen md:overflow-visible overflow-hidden flex flex-col center sticky top-0">

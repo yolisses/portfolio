@@ -6,17 +6,20 @@ interface ToolsProps {
 
 export function Tools({ names }:ToolsProps) {
   return (
-    <div className="overflow-hidden">
-      <div
-        className="flex flex-row text-sm gap-2 overflow-x-auto"
-      >
-        {names.map((name) => (
-          <ToolIcon
-            key={name}
-            name={name}
-          />
-        ))}
+    <>
+      <h3 className="mt-8 mb-2">Tools</h3>
+      <div className="overflow-hidden">
+        <div
+          className="flex flex-row text-sm gap-2 overflow-x-auto scrollbar-hide"
+        >
+          {names.map((name) => (
+            <ToolIcon
+              key={name}
+              name={name}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
