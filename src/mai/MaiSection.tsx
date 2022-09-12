@@ -8,17 +8,15 @@ export function MaiSection() {
   return (
     <ProjectSection
       name="mai"
+      extra={<MaiExtra />}
       title="Mai (Musical AI)"
       faderColor="rgb(15 23 42)"
+      className="bg-slate-900 text-white md:flex-row-reverse"
       style={{
         fontSize: '1.25em',
         fontFamily: "'Source Sans Pro'",
       }}
-      className="bg-slate-900 text-white md:flex-row-reverse"
-      extra={<MaiExtra />}
     >
-      <h3>About</h3>
-
       <Tools names={[
         'tensorflow',
         'django',
