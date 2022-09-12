@@ -4,6 +4,7 @@ import { ToolIcon, ToolName } from './ToolIcon';
 
 interface ProjectSectionProps {
   name:string
+  url?:string
   title:string
   about:ReactNode
   extra?:ReactNode
@@ -13,7 +14,7 @@ interface ProjectSectionProps {
 }
 
 export function ProjectSection({
-  title, name, about, tools, extra, style, className,
+  title, name, about, tools, extra, style, className, url,
 }:ProjectSectionProps) {
   return (
     <section
@@ -21,15 +22,24 @@ export function ProjectSection({
       style={style}
     >
       <div className="p-4">
-        <div className="flex flex-row items-center gap-4">
+        <div className="flex flex-row items-center gap-4 text-4xl">
           <img
             alt="logo"
             width={60}
             src={`/${name}/logo.svg`}
           />
-          <h2 className="text-4xl">
-            {title}
-          </h2>
+          {url ? (
+            <a
+              href={url}
+              target="_blank"
+              rel="noreferrer"
+              className="hover:underline"
+            >
+              <h2>{title}</h2>
+            </a>
+          ) : (
+            <h2>{title}</h2>
+          )}
         </div>
         <div>
           <h3 className="mt-8 mb-2">About</h3>

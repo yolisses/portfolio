@@ -8,8 +8,18 @@ export function SonhinSection() {
       name="sonhin"
       title="Sonhin"
       extra={<SonhinExtra />}
+      url="https://sonhin.com"
       className="bg-zinc-800 text-white"
       style={{ fontFamily: "'Source Sans Pro'", fontSize: '1.25em' }}
+      tools={[
+        'spring',
+        'java',
+        'neo4j',
+        'docker',
+        'react',
+        'typescript',
+        'tailwind',
+      ]}
       about={(
         <>
           <p>
@@ -85,15 +95,6 @@ export function SonhinSection() {
           </ul>
         </>
       )}
-      tools={[
-        'spring',
-        'java',
-        'neo4j',
-        'docker',
-        'react',
-        'typescript',
-        'tailwind',
-      ]}
     />
 
   );
