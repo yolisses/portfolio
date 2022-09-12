@@ -9,3 +9,11 @@
 .project-section li {
     @apply my-1
 }
+
+.project-section p {
+    @apply indent-4
+}
+
+.project-section .explanation {
+    @apply mt-8
+}
