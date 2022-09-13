@@ -5,7 +5,7 @@ import './ProjectSection.css';
 interface ProjectSectionProps {
   name:string
   url?:string
-  title:string
+  title:ReactNode
   extra?:ReactNode
   className?:string
   children:ReactNode
