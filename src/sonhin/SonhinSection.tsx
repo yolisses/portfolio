@@ -16,6 +16,10 @@ export function SonhinSection() {
         fontFamily: "'Source Sans Pro'",
       }}
     >
+      <div className="explanation">
+        <p>Sonhin is a music streaming service.</p>
+        <p>It&apos;s ultimate goal is to deliver music made by MAI and collect huge amounts of feedback to train the model.</p>
+      </div>
       <Tools
         names={[
           'spring',
@@ -27,9 +31,6 @@ export function SonhinSection() {
           'tailwind',
         ]}
       />
-      <p>
-        Something in here
-      </p>
     </ProjectSection>
   );
 }
