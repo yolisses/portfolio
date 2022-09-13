@@ -37,17 +37,6 @@ export function MaiSection() {
           Currently, it can export MIDI&apos;s, audios and TikTok simple videos
         </p>
       </div>
-      <Tools names={[
-        'tensorflow',
-        'django',
-        'python',
-        'jupyter',
-        'websocket',
-        'react',
-        'typescript',
-        'tailwind',
-      ]}
-      />
       <ProjectDetails title="Motivation">
         <p>
           AI will make the vast majority of the music. Here&apos;s why:
@@ -73,6 +62,17 @@ export function MaiSection() {
           </li>
         </ul>
       </ProjectDetails>
+      <Tools names={[
+        'tensorflow',
+        'django',
+        'python',
+        'jupyter',
+        'websocket',
+        'react',
+        'typescript',
+        'tailwind',
+      ]}
+      />
     </ProjectSection>
   );
 }
