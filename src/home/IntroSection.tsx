@@ -5,7 +5,7 @@ export function IntroSection() {
   return (
     <section
       style={{ backgroundImage: 'url("intro/intro.jpg")' }}
-      className="text-white h-screen flex flex-col justify-between items-center bg-cover bg-no-repeat bg-center bg-fixed"
+      className="text-white h-screen bg-slate-800 bg-gradient-to-b from-slate-800 to-gray-900 flex flex-col justify-between items-center bg-cover bg-no-repeat bg-center bg-fixed"
     >
       <IntroHeader />
       <h2
