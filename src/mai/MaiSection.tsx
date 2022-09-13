@@ -70,7 +70,7 @@ export function MaiSection() {
       </ProjectDetails>
       <ProjectDetails title="Technical Features">
         <p>
-          I tried many models because of the lack of data (due to Copywrite) and the fact that
+          I tried many models. Mainly because of the lack of data (due to Copywrite) and the fact that
           <div className="bg-white bg-opacity-5 rounded-lg p-2 m-2 indent-2 w-fit">
             <blockquote
               className="inline"
