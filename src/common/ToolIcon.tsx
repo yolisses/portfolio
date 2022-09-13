@@ -17,6 +17,7 @@ const icons = {
   typescript: 'Typescript',
   postgresql: 'PostgreSQL',
   tensorflow: 'Tensorflow',
+  matplotlib: 'Matplotlib',
 };
 
 export type ToolName = keyof(typeof icons);

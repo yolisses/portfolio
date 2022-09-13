@@ -131,10 +131,10 @@ export function MaiSection() {
         'django',
         'python',
         'jupyter',
+        'matplotlib',
         'websocket',
         'react',
         'typescript',
-        'tailwind',
       ]}
       />
     </ProjectSection>
