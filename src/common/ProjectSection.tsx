@@ -19,10 +19,10 @@ export function ProjectSection({
   const faderStyle = { '--fader-color': faderColor } as CSSProperties;
   return (
     <section
-      className={`project-section flex gap-8 md:gap-16 flex-col text-lg md:flex-row ${className}`}
+      className={`project-section flex gap-8 md:gap-16 flex-col md:flex-row text-lg justify-center ${className}`}
       style={{ ...style, ...faderStyle }}
     >
-      <div className="p-4 flex-1">
+      <div className="p-4 md:max-w-2xl">
         <div className="flex flex-row items-center gap-4 text-4xl">
           <img
             alt="logo"
