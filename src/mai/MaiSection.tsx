@@ -88,7 +88,7 @@ export function MaiSection() {
         <ul>
           <li>Feed forward</li>
           <li>
-            Convilotional Neural Network (
+            Convolutional Neural Network (
             <abbr>CNN</abbr>
             )
           </li>
