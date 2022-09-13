@@ -50,23 +50,26 @@ export function MaiSection() {
       />
       <ProjectDetails title="Motivation">
         <p>
-          AI will make the vast majority of the pieces of music. Period. Because:
+          AI will make the vast majority of the music. Here&apos;s why:
         </p>
         <ul>
           <li>
-            A well-trained machine can generate music orders of magnitude faster than humans.
+            A machine can create music orders of magnitude faster than humans.
           </li>
           <li>
-            Can analyze the feedback from people at the seconds level endless, with petabytes of data.
+            It can analyze the feedback from millions of people, at the seconds level, endless, with petabytes of data.
           </li>
           <li>
-            Can learn the preferences of individual listeners and create new music, especially for them.
+            Can learn the preferences of individual listeners and create new music, specifically for them.
           </li>
           <li>
-            It is all the way cheaper and can be used on demand in videos, games, or even in a real-time real-life soundtrack.
+            It is all the way cheaper.
           </li>
           <li>
-            And this is my attempt to embrace this change.
+            It can create in real-time for videos, games, or even for a personal soundtrack.
+          </li>
+          <li>
+            It can do A/B tests
           </li>
         </ul>
       </ProjectDetails>
