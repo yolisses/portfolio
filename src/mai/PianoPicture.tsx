@@ -52,7 +52,7 @@ export function PianoPicture({ audioRef, playing }:PianoPictureProps) {
           href="/mai/piano.png"
           preserveAspectRatio="none"
         />
-        {notes.map((value) => (
+        {playing && notes.map((value) => (
           <Fragment key={value.id}>
             <path
               fill="#42c55e"
