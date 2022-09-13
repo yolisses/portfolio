@@ -19,7 +19,7 @@ export function ProjectSection({
   const faderStyle = { '--fader-color': faderColor } as CSSProperties;
   return (
     <section
-      className={`project-section flex gap-8 flex-col text-lg md:flex-row ${className}`}
+      className={`project-section flex gap-8 md:gap-16 flex-col text-lg md:flex-row ${className}`}
       style={{ ...style, ...faderStyle }}
     >
       <div className="p-4 flex-1">
