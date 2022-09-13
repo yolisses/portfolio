@@ -1,5 +1,5 @@
 import {
-  FaEnvelope, FaGithub, FaHeart, FaLinkedin, FaRegEnvelope, FaWhatsapp,
+  FaGithub, FaLinkedin, FaRegEnvelope, FaWhatsapp,
 } from 'react-icons/fa';
 
 export function Footer() {
