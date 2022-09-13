@@ -43,7 +43,7 @@ export function PlantsSection() {
           <li>Distance results filter</li>
           <li>Geocoding and reverse geocoding</li>
           <li>Interactive map</li>
-          <li>Full text search, using PostgresSQL</li>
+          <li>Full text search</li>
           <li>Push notifications</li>
           <li>Progressive Web App (PWA)</li>
           <li>Available in Play Store</li>
