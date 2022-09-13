@@ -1,11 +1,11 @@
 import {
-  Fragment, MutableRefObject, RefObject, useEffect, useState,
+  Fragment, RefObject, useEffect, useState,
 } from 'react';
-import { displayTimestep } from './displayTimestep';
-import { getCurrentNotes } from './getCurrentNotes';
 import { Note } from './Note';
-import { pianoKeyPaths } from './pianoKeyPaths';
 import { useAnimation } from './useAnimation';
+import { pianoKeyPaths } from './pianoKeyPaths';
+import { getCurrentNotes } from './getCurrentNotes';
+import './PianoPicture.css';
 
 /* eslint-disable react/no-unknown-property */
 interface PianoPictureProps {
@@ -55,8 +55,20 @@ export function PianoPicture({ audioRef, playing }:PianoPictureProps) {
         {notes.map((value) => (
           <Fragment key={value.id}>
             <path
-              fill="#32d56e"
-              className="scale-105 -translate-x-1 -translate-y-2 blur-sm bg-blend-color-burn"
+              fill="#42c55e"
+              className="piano-glow scale-105 origin-center -translate-y-2"
+              style={{
+                animationDuration: '0.5s',
+              }}
+              d={pianoKeyPaths[value.pitch - pitchOffset]}
+            />
+            <path
+              fill="#42c55e"
+              style={{
+                animationDelay: '-0.2s',
+                animationDuration: '1s',
+              }}
+              className="piano-glow scale-105 origin-center -translate-y-2"
               d={pianoKeyPaths[value.pitch - pitchOffset]}
             />
             <path

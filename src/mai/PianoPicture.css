@@ -1,0 +1,13 @@
+@keyframes piano-glow-animation {
+    from {
+        filter: blur(4px);
+    }
+
+    to {
+        filter: blur(8px);
+    }
+}
+
+.piano-glow {
+    animation: piano-glow-animation infinite alternate;
+}
