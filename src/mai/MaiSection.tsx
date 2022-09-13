@@ -9,7 +9,7 @@ export function MaiSection() {
     <ProjectSection
       name="mai"
       extra={<MaiExtra />}
-      title="Mai (Musical AI)"
+      title="Musical AI (Mai)"
       faderColor="rgb(15 23 42)"
       className="bg-slate-900 text-white md:flex-row-reverse"
       style={{
@@ -17,6 +17,26 @@ export function MaiSection() {
         fontFamily: "'Source Sans Pro'",
       }}
     >
+      <div className="explanation">
+        <p>
+          Mai is an automatic music creation tool.
+        </p>
+        <p>
+          It&apos;s mostly based on this
+          {' '}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="underline decoration-1"
+            href="https://openai.com/blog/deep-reinforcement-learning-from-human-preferences/"
+          >
+            Open AI research
+          </a>
+        </p>
+        <p>
+          Currently, it can export MIDI&apos;s, audios and TikTok simple videos
+        </p>
+      </div>
       <Tools names={[
         'tensorflow',
         'django',
